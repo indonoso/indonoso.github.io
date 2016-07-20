@@ -1,0 +1,567 @@
+{"es": {
+  "education": [
+    {
+      "dates": "Marzo 2010 - Julio 2014",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Licenciada en Ciencias de la ingeniería",
+      "relevant_classes": "programación avanzada, optimización, ingeniería de software, bases de datos, arquitectura de computadores, matemáticas discretas"
+    },
+    {
+      "dates": "Sept. 2012 - Junio 2014",
+      "where": "École Centrale de Lille",
+      "city": "Lille, Francia",
+      "what": "Ingeniero Generalista. Programa de Doble Diploma",
+      "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
+    },
+    {
+      "dates": "Agosto. 2014 - Julio 2015",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Ingeniería Industrial, diploma en Tecnologías de la Información",
+      "relevant_classes": "tecnologías para la gestión estratégica, gestión de proyectos TI, gestión de operaciones TI, gestión de operaciones, evaluación de proyectos, finanzas, marketing"
+    },
+    {
+      "dates": "Marzo. 2015 - ",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Magíster en Ciencias de la ingeniería, especialidad en Ciencias de la Computación",
+      "relevant_classes": "Clasificación de artículos de investigación médica con técnicas TextMining"
+    }
+  ],
+  "working_experience": [
+    {
+      "dates": "Octubre 2012 - Marzo 2014",
+      "where": "École Centrale de Lille",
+      "city": "Lille, Francia",
+      "what": "Activité Projet Centrale Lille",
+      "activities": "Creación de un sistema para organizar el área de urgencias pediatricas del CHR (Centre Hospitalier Régional Universitaire) de Lille",
+      "bullet_points": [
+        "Presupuesto de 10k€",
+        "Equipo de 6 persona",
+        "Encargada de:",
+        [
+          "armar el plan de trabajo",
+          "búsqueda de indicadores en base de datos"
+        ]
+      ]
+    },
+    {
+      "dates": "Enero 2013",
+      "where": "Furet du Nord",
+      "city": "Lille, Francia",
+      "what": "Práctica de Descubrimiento de la empresa",
+      "activities": "Servicio al cliente e inventario anual del sector de papelería",
+      "bullet_points": []
+    },
+    {
+      "dates": "Abril 2014 - Julio 2014",
+      "where": "Soft Solutions",
+      "city": "Lille, Francia",
+      "what": "Práctica Profesional",
+      "activities": "Desarrollo de tests sobre interfaces desarrolladas en PL/SQL Oracle g11",
+      "bullet_points": []
+    },
+    {
+      "dates": "Agosto 2015 - Diciembre 2015",
+      "where": "Accuehealth",
+      "city": "Santiago, Chile",
+      "what": "Participante del programa SinLímites del Centro de Innovación UC",
+      "activities": "Creación de un prototipo de modelo predictivo de salud para anticipar complicaciones de pacientes crónicos",
+      "bullet_points": [
+        "Aplicación de técnicas de data mining en una base de datos de salud"
+      ]
+    },
+    {
+      "dates": "Diciembre 2015",
+      "where": "Sonda",
+      "city": "Santiago, Chile",
+      "what": "Participante del programa de Asesorías del Centro de Innovación UC",
+      "activities": "Asesoría en proyectos de automatización e innovación",
+      "bullet_points": []
+    }
+  ],
+  "research_experience": [
+    {
+      "dates": "Agosto - Diciembre 2011",
+      "where": "Departamento de Ciencia de la Computación de la Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Proyecto de investigación en pregrado",
+      "activities": "Estudio de un software colaborativo para niños de 6° básico",
+      "bullet_points": []
+    },
+    {
+      "dates": "Marzo - Julio 2012",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Ayudante del departamento de Ciencia de la Computación",
+      "activities": "",
+      "bullet_points": [
+        "Programación Avanzada",
+        "Introducción a la programación"
+      ]
+    },
+    {
+      "dates": "Agosto 2015 - Julio 2014",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Ayudante de investigación del departamento Industrial y de Sistemas",
+      "activities": "",
+      "bullet_points": []
+    },
+    {
+      "dates": "Marzo - Julio 2015",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Ayudante del departamento de Ciencia de la Computación",
+      "activities": "",
+      "bullet_points": [
+        "Programación Avanzada",
+        "Minería de Datos (magíster de gestión de la información)",
+        "Minería de Datos (diplomado en inteligencia de negocios"
+      ]
+    },
+    {
+      "dates": "Agosto - Diciembre 2015",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Ayudante del departamento de Ciencia de la Computación",
+      "activities": "",
+      "bullet_points": [
+        "Programación Avanzada",
+        "Minería de Datos",
+        "Sistemas Recomendadores"
+      ]
+    },
+    {
+      "dates": "Agosto 2015 - ",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Tesis de Magíster",
+      "activities": "Text Mining y Visualización aplicada a artículos científicos médicos",
+      "bullet_points": []
+    }
+  ],
+  "skills": {
+    "Programming Languages": [
+      {
+        "name": "Python",
+        "expertise": 100,
+        "library": [
+          {
+            "name": "numpy",
+            "expertise": 100
+          },
+          {
+            "name": "pandas",
+            "expertise": 100
+          },
+          {
+            "name": "scikit-learn",
+            "expertise": 100
+          },
+          {
+            "name": "scipy",
+            "expertise": 85
+          },
+          {
+            "name": "matplotlib",
+            "expertise": 85
+          },
+          {
+            "name": "beautifulSoup",
+            "y": 85
+          },
+          {
+            "name": "Django",
+            "expertise": 50
+          }
+        ]
+      },
+      {
+        "name": "Java",
+        "expertise": 95,
+        "library": ""
+      },
+      {
+        "name": "C#",
+        "expertise": 90,
+        "library": [
+          {
+            "name": "ASP .NET",
+            "expertise": 20
+          }
+        ]
+      },
+      {
+        "name": "Ruby",
+        "expertise": 60,
+        "library": [
+          {
+            "name": "Rails",
+            "expertise": 50
+          }
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "expertise": 40,
+        "library": [
+          {
+            "name": "d3",
+            "expertise": 40
+          }
+        ]
+      },
+      {
+        "name": "PHP",
+        "expertise": 40,
+        "library": ""
+      },
+      {
+        "name": "C",
+        "expertise": 20,
+        "library": ""
+      },
+      {
+        "name": "C-Cuda",
+        "expertise": 20,
+        "library": ""
+      }
+    ],
+    "Data Bases": [
+      {
+        "name": "MySQL",
+        "expertise": 95
+      },
+      {
+        "name": "postgreSQL",
+        "expertise": 95
+      },
+      {
+        "name": "Oracle",
+        "expertise": 95
+      },
+      {
+        "name": "PLSQL",
+        "expertise": 90
+      }
+    ]
+  },
+  "oskills": {
+    "languages": {
+      "Español": "Nativo",
+      "Inglés": [
+        "Avanzado",
+        [
+          "1 año de intercambio en Nueva Zelanda",
+          "TOEIC 2014: 965",
+          "TOEIC 2010: 915"
+        ]
+      ],
+      "Francés": [
+        "Avanzado",
+        [
+          "2 años Ecole Centrale de Lille",
+          "DALF C1 obtenido en 2014"
+        ]
+      ]
+    }
+  },
+  "interests": [
+    {
+      "Idiomas": "Me interesa aprender otros idiomas. Durante el año 2011 hice un año de Alemán"
+    },
+    {
+      "Tejer": "Tejo bufandas y gorros con crochet. También tejo collares, pulseras y accesorios con la técnica macramé"
+    },
+    {
+      "Diseño": "Me interesa el diseño de interfaces humano-computador."
+    },
+    {
+      "Viz": "Me gusta el área de visualización de la información y de su relación con Data Science"
+    }
+  ]
+}
+,
+"en":
+{"education": [
+    {
+      "dates": "March 2010 - July 2014",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Bachelor of Engineering",
+      "relevant_classes": "advanced programming, optimization, software enginering, databases,  computer architecture, discrete mathematics"
+    },
+    {
+      "dates": "September 2012 - June 2014",
+      "where": "École Centrale de Lille",
+      "city": "Lille, Francia",
+      "what": "Generalist Engineering. Double Diplome Program",
+      "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
+    },
+    {
+      "dates": "August 2014 - July 2015",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Industrial Engineering, Information Technology diploma",
+      "relevant_classes": "Technologies for strategic management, TI project management, TI operations management, operations management, project evaluation, finance, marketing"
+    },
+    {
+      "dates": "March 2015 - ",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Master of Engineering Science, Computer Science specialty",
+      "relevant_classes": "Classification of medicine research articles with TextMining and visualization"
+    }
+  ],
+  "working_experience": [
+    {
+      "dates": "October 2012 - March 2014",
+      "where": "École Centrale de Lille",
+      "city": "Lille, France",
+      "what": "Activité Projet Centrale Lille",
+      "activities": "Creation of software to help the management of the paediatric area of CHR (Centre Hospitalier Régional Universitaire de Lille)",
+      "bullet_points": [
+        "Budget of 10 k€",
+        "team of 6 people",
+        {"In charge of":[
+        "Finding indicators of tension in a two-year data base of the hospital", "Creation of work plan"]}
+      ]
+    },
+    {
+      "dates": "January 2013",
+      "where": "Furet du Nord",
+      "city": "Lille, France",
+      "what": "\"Discover the company\" Internship",
+      "activities": "Preparation of annual inventory and costumer information",
+      "bullet_points": []
+    },
+    {
+      "dates": "April 2014 - July 2014",
+      "where": "Soft Solutions",
+      "city": "Lille, Francia",
+      "what": "Professional Internship",
+      "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
+      "bullet_points": []
+    },
+    {
+      "dates": "August 2015 - December 2015",
+      "where": "Accuehealth",
+      "city": "Santiago, Chile",
+      "what": "Participant in the programa SinLímites of the center of innovation Anacleto Angelini UC",
+      "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
+      "bullet_points": [
+        "Aplication of data mining and machine learning with health records"
+      ]
+    },
+    {
+      "dates": "December 2015",
+      "where": "Sonda",
+      "city": "Santiago, Chile",
+      "what": "Sonda Consultant for the consultancy program of the center of innovation Anacleto Angelini UC",
+      "activities": "Automatization and innovation consultant",
+      "bullet_points": []
+    }
+  ],
+  "research_experience": [
+    {
+      "dates": "August - December 2011",
+      "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Undergraduate research",
+      "activities": "Study of a collaborative software for 12 years old students",
+      "bullet_points": []
+    },
+    {
+      "dates": "March - July 2012",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Advanced Programming",
+        "Introduction to Programming"
+      ]
+    },
+    {
+      "dates": "August 2015 - July 2014",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Research Assitant at the Industrial and Systems Deparment",
+      "activities": "",
+      "bullet_points": []
+    },
+    {
+      "dates": "March - July 2015",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Advanced Programming",
+        "Data Mining (Master of information management)",
+        "Data Mining (Bussiness Inteligence course for professionals"
+      ]
+    },
+    {
+      "dates": "August - December 2015",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Advanced Programming",
+        "Data Mining",
+        "Recommender Systems"
+      ]
+    },
+    {
+      "dates": "Agosto 2015 - ",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Master's Thesis",
+      "activities": "Classification of medicine research articles with TextMining and visualization",
+      "bullet_points": []
+    }
+  ],
+  "skills": {
+    "Programming Languages": [
+      {
+        "name": "Python",
+        "expertise": 100,
+        "library": [
+          {
+            "name": "numpy",
+            "expertise": 100
+          },
+          {
+            "name": "pandas",
+            "expertise": 100
+          },
+          {
+            "name": "scikit-learn",
+            "expertise": 100
+          },
+          {
+            "name": "scipy",
+            "expertise": 85
+          },
+          {
+            "name": "matplotlib",
+            "expertise": 85
+          },
+          {
+            "name": "beautifulSoup",
+            "y": 85
+          },
+          {
+            "name": "Django",
+            "expertise": 50
+          }
+        ]
+      },
+      {
+        "name": "Java",
+        "expertise": 85,
+        "library": ""
+      },
+      {
+        "name": "C#",
+        "expertise": 90,
+        "library": [
+          {
+            "name": "ASP .NET",
+            "expertise": 10
+          }
+        ]
+      },
+      {
+        "name": "Ruby",
+        "expertise": 60,
+        "library": [
+          {
+            "name": "Rails",
+            "expertise": 50
+          }
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "expertise": 40,
+        "library": [
+          {
+            "name": "d3",
+            "expertise": 70
+          }
+        ]
+      },
+      {
+        "name": "C",
+        "expertise": 20,
+        "library": ""
+      },
+      {
+        "name": "C-Cuda",
+        "expertise": 10,
+        "library": ""
+      }
+    ],
+    "Data Bases": [
+      {
+        "name": "MySQL",
+        "expertise": 90
+      },
+      {
+        "name": "postgreSQL",
+        "expertise": 90
+      },
+      {
+        "name": "Oracle",
+        "expertise": 90
+      },
+      {
+        "name": "PLSQL",
+        "expertise": 90
+      },
+      {
+        "name": "Mongo",
+        "expertise": 70
+      }
+    ]
+  },
+  "oskills": {
+    "languages": {
+      "Spanish": "Native",
+      "English": [
+        "Advanced",
+        [
+          "One year as a exchange student in New Zealand (Cashmere High School, Christchurch)",
+          "TOEIC 2014: 965",
+          "TOEIC 2010: 915"
+        ]
+      ],
+      "French": [
+        "Avanzado",
+        [
+          "Two years as a student at Ecole Centrale de Lille",
+          "Diploma DALF C1 in 2014"
+        ]
+      ]
+    }
+  },
+  "interests": [
+    {
+      "Idiomas": "Me interesa aprender otros idiomas. Durante el año 2011 hice un año de Alemán"
+    },
+    {
+      "Tejer": "Tejo bufandas y gorros con crochet. También tejo collares, pulseras y accesorios con la técnica macramé"
+    },
+    {
+      "Diseño": "Me interesa el diseño de interfaces humano-computador."
+    },
+    {
+      "Viz": "Me gusta el área de visualización de la información y de su relación con Data Science"
+    }
+  ]
+}

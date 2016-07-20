@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ivania Donoso</title>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container"> 
+
+<div classs="row">
+	<div class="col-md-3">
+		<img src="perfil.jpg" alt="IvaniaDonoso" class="profile">
+		<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+		<a href="mailto:ivania.donoso@gmail.com?Subject=[CV]%20Contact" target="_top">ivania.donoso@gmail.com</a></p>
+		<p> <a href="https://github.com/indonoso"><img src="GitHub-Mark-32px.png" class="icon"></a></p>
+		<p>Explicar quién soy jajaja</p>
+	</div>
+	<div class="col-md-9">
+		<ul class="nav nav-tabs">
+		  <li role="presentation" class="active" ><a href="research" aria-controls="research" role="tab" data-toggle="tab">Research</a></li>
+		  <li role="presentation"><a href="skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
+		  <li role="presentation"><a href="education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
+		  <li role="presentation"><a href="working" aria-controls="working" role="tab" data-toggle="tab">Working Experience</a></li>
+		  <li role="presentation"><a href="interests" aria-controls="interests" role="tab" data-toggle="tab">Interests</a></li>
+		</ul>
+	 <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="research"> </div>
+	    <div role="tabpanel" class="tab-pane" id="skills">...</div>
+	    <div role="tabpanel" class="tab-pane" id="education">...</div>
+	    <div role="tabpanel" class="tab-pane" id="working">...</div>
+	    <div role="tabpanel" class="tab-pane" id="interests">...</div>
+	  </div>
+	</div>
+<div class="row"></div>
+<script>
+    function loadDatesCity(dates_, city_) {
+        var left = document.createElement("div");
+        left.setAttribute('class', 'col-md-2');
+
+        var dates = document.createElement("h4");
+        dates.appendChild(document.createTextNode(dates_))
+        var city = document.createElement("h5");
+        city.appendChild(document.createTextNode(city_))
+
+        left.appendChild(dates)
+        left.appendChild(city)
+        return left
+    }
+    function loadExperience(div, contentInfo, _type) {
+        for (var i = 0; i < contentInfo.length; i++) {
+
+            var row = document.createElement("div");
+            row.setAttribute('class', 'row');
+            div.appendChild(row)
+
+            // Fecha y ciudad
+            var left = loadDatesCity(contentInfo[i]['dates'], contentInfo[i]['city'])
+            var right = document.createElement("div");
+            right.setAttribute('class', 'col-md-10');
+            if (_type) {
+                // Contenido
+                var what = document.createElement("h3");
+                what.setAttribute('class', 'what')
+                what.appendChild(document.createTextNode(contentInfo[i]['what']))
+                var where = document.createElement("h4");
+                where.appendChild(document.createTextNode(contentInfo[i]['where']))
+                var extra = document.createElement("p");
+                extra.appendChild(document.createTextNode(contentInfo[i]['relevant_classes']))
+                right.appendChild(what)
+                right.appendChild(where)
+                right.appendChild(extra)
+            } else {
+                var what = document.createElement("h3");
+                what.setAttribute('class', 'what')
+                what.appendChild(document.createTextNode(contentInfo[i]['what']))
+                var where = document.createElement("h4");
+                where.appendChild(document.createTextNode(contentInfo[i]['where']))
+                var extra = document.createElement("p");
+                extra.appendChild(document.createTextNode(contentInfo[i]['activities']))
+                right.appendChild(what)
+                right.appendChild(where)
+                right.appendChild(extra)
+                if (contentInfo[i]['bullet_points'].length > 0) {
+                    var bullet = document.createElement("ul")
+                    for (var j = 0; j < contentInfo[i]['bullet_points'].length; j++) {
+                        var li = document.createElement("li")
+                        li.appendChild(document.createTextNode(contentInfo[i]['bullet_points'][j]))
+                    }
+                    right.appendChild(bullet)
+                }
+
+
+            }
+
+            row.appendChild(left)
+            row.appendChild(right)
+
+        }
+    }
+    function loadSkills(div, contentInfo, key) {
+        var row = document.createElement("div");
+        row.setAttribute('class', 'row');
+
+        div.appendChild(row)
+        var right = document.createElement("div");
+        right.setAttribute('class', 'col-md-12');
+        row.appendChild(right)
+        for (section in contentInfo) {
+            if (section == "Programming Languages") {
+                var h3 = document.createElement("h3")
+                h3.appendChild(document.createTextNode(section))
+
+                var divChart = document.createElement("div")
+                divChart.setAttribute("id", "chart" + section[0])
+                var chart = document.createElement("svg")
+                divChart.appendChild(chart)
+                right.appendChild(h3)
+                right.appendChild(divChart)
+
+                var aux = [
+                        {
+                            key: 'Series1',
+                            color: '#d62728',
+                            values:  contentInfo[section]
+                        }
+                    ]
+                console.log(aux)
+                nv.addGraph(function() {
+                    chart = nv.models.multiBarHorizontalChart()
+                        .x(function(d) { return d.name })
+                        .y(function(d) { return d.expertise })
+                        .yErr(function(d) { return [-Math.abs(d.value * Math.random() * 0.3), Math.abs(d.value * Math.random() * 0.3)] })
+                        .barColor(d3.scale.category20().range())
+                        .duration(250)
+                        .stacked(true);
+
+                    console.log(chart)
+
+                    chart.yAxis.tickFormat(d3.format(',.2f'));
+
+                    d3.select("#chart" + section[0] + " svg")
+                        .datum(aux)
+                        .call(chart);
+
+                    nv.utils.windowResize(chart.update);
+
+                    chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+                    chart.state.dispatch.on('change', function(state){
+                        nv.log('state', JSON.stringify(state));
+                    });
+                    return chart;
+                });
+
+
+
+            }
+        }
+    }
+     var chart;
+$.getJSON("cv_info.json", function(info) {
+
+    for (var key in info) {
+        var _type = key == "education" ? true : false
+        var div = document.getElementById(key).children[0]
+        var contentInfo = info[key]
+        if (_type){
+            loadExperience(div, contentInfo, _type)
+        }
+        if (key == "skills"){
+            loadSkills(div, contentInfo, key)
+        }
+        //console.log(contentInfo)
+    }
+
+});
+
+
+</script>
+</div>
+</body>
+</html>
