@@ -30,16 +30,15 @@
 		  <li role="presentation"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
 		  <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
 		  <li role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Working Experience</a></li>
-		  <li role="presentation"><a href="#interests" aria-controls="interests" role="tab" data-toggle="tab">Interests</a></li>
+		  <li role="presentation"><a href="#other_activities" aria-controls="other_activities" role="tab" data-toggle="tab">Interests</a></li>
 		  <li role="presentation"><a href="#oskills" aria-controls="oskills" role="tab" data-toggle="tab">Other Skills</a></li>
 		</ul>
 	 <div class="tab-content">
 	    <div role="tabpanel" class="tab-pane active" id="research"> </div>
 	    <div role="tabpanel" class="tab-pane" id="skills"></div>
+	    <div role="tabpanel" class="tab-pane" id="other_interests"></div>
 	    <div role="tabpanel" class="tab-pane" id="education"></div>
 	    <div role="tabpanel" class="tab-pane" id="working"></div>
-	    <div role="tabpanel" class="tab-pane" id="interests"></div>
-	    <div role="tabpanel" class="tab-pane" id="oskills"></div>
 	  </div>
 	</div>
 <div class="row"></div>
@@ -104,7 +103,7 @@
                     var bullet = document.createElement("ul")
                     for (var j = 0; j < contentInfo[i]['bullet_points'].length; j++) {
                         var li = document.createElement("li")
-                        li.appendChild(document.createTextNode(contentInfo[i]['bullet_points'][j]))
+                        li.innerHTML = contentInfo[i]['bullet_points'][j]
                         bullet.appendChild(li)
                     }
                     right.appendChild(bullet)
@@ -177,8 +176,39 @@
             }
         }
     }
-     var chart;
- info = {"education": [
+
+    function loadOther(div, contentInfo){
+    	var row = document.createElement("div");
+        row.setAttribute('class', 'row');
+        div.appendChild(row)
+        var content = document.createElement("div");
+        content.setAttribute('class', 'col-md-12');
+        row.appendChild(content)
+        var ul = document.createElement("ul")
+        last_index = contentInfo.length - 1
+        for (var i = 0; i < last_index; i++) {
+        	
+        		var li = document.createElement("li")
+        		li.innerHTML = contentInfo[i]
+        		ul.appendChild(li)
+        	
+        }
+        content.append(ul)
+        var other_interests = document.createElement("h5")
+        other_interests.innerHTML = "Non-Academic interests"
+		for  (var key in contentInfo[last_index]){
+			var title = document.createElement("h6")
+			title.innerHTML = key
+			var explanation = contentInfo[last_index][key]
+			content.appendChild(title)
+			content.appendChild(explanation)
+		}
+	}
+     
+    
+ var chart;
+ info = 
+ {"education": [
     {
       "dates": "March 2010 - July 2014",
       "where": "Pontificia Universidad Católica de Chile",
@@ -231,7 +261,7 @@
     },
     {
       "dates": "April 2014 - July 2014",
-      "where": "Soft Solutions",
+      "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
       "city": "Lille, Francia",
       "what": "Professional Internship",
       "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
@@ -241,10 +271,11 @@
       "dates": "August 2015 - December 2015",
       "where": "Accuehealth",
       "city": "Santiago, Chile",
-      "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\"><programa SinLímites</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
+      "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">SinLímites program</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
       "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
-      "bullet_points": 
-        "Aplication of data mining and machine learning with health records"
+      "bullet_points": [
+        "Aplication of data mining and machine learning technique to health records",
+        "Results in the areas of operations management and patient's health"
       ]
     },
     {
@@ -291,9 +322,9 @@
       "what": "Teaching Asistant at the Computer Science Deparment",
       "activities": "",
       "bullet_points": [
-        "Advanced Programming",
+        "<a class=\"link\" href=\"https://github.com/IIC2233-2015-1/syllabus\">Advanced Programming</a>",
         "Data Mining (Master of information management)",
-        "Data Mining (Bussiness Inteligence course for professionals"
+        "Data Mining (Bussiness Inteligence course for professionals)"
       ]
     },
     {
@@ -303,9 +334,20 @@
       "what": "Teaching Asistant at the Computer Science Deparment",
       "activities": "",
       "bullet_points": [
-        "Advanced Programming",
+        "<a class=\"link\" href=\"https://github.com/IIC2233-2015-2/syllabus\">Advanced Programming</a>",
         "Data Mining",
-        "Recommender Systems"
+        "<a class=\"link\" href=\"http://dparra.sitios.ing.uc.cl/classes/recsys-2015-2/\">Recommender Systems</a>"
+      ]
+    },
+    {
+      "dates": "March - July 2016",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "<a class=\"link\" href=\"https://github.com/IIC2233-2016-1/syllabus\">Advanced Programming (Chief of Assitantship area)</a>",
+        "Data Mining (Bussiness Inteligence course for professionals)"
       ]
     },
     {
@@ -337,7 +379,7 @@
           },
           {
             "name": "scipy",
-            "expertise": 85
+            "expertise": 90
           },
           {
             "name": "matplotlib",
@@ -420,9 +462,9 @@
         "name": "Mongo",
         "expertise": 70
       }
-    ]
-  },
-  "oskills": {
+    ],
+    "Software and OS":
+    ["Tableau", "Pycharm", "Ubuntu 14.04", "CentOS"],
     "languages": {
       "Spanish": "Native",
       "English": [
@@ -441,29 +483,26 @@
         ]
       ]
     }
-  },
-  "interests": [
-    {
-      "Idiomas": "Me interesa aprender otros idiomas. Durante el año 2011 hice un año de Alemán"
-    },
-    {
-      "Tejer": "Tejo bufandas y gorros con crochet. También tejo collares, pulseras y accesorios con la técnica macramé"
-    },
-    {
-      "Diseño": "Me interesa el diseño de interfaces humano-computador."
-    },
-    {
-      "Viz": "Me gusta el área de visualización de la información y de su relación con Data Science"
-    }
-  ],
+    
+  } 
+  ,
   'other_activities': [
   "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
   "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Centerpa Anacleto Angelini UC",
   "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
   "Emerging issues committee Chief 2012 of the Engineering Student Center", 
   "Secretary of the ACM Student Chapter at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
-  
-
+  {"interests": [
+    {
+      "Languages": "I'm very interested in learning other languages. I speak english and french, and I want to learn German. In 2011 and studied it at my university."
+    },
+    {
+      "Knitting": "I chrochet scarves and beanis. I also make necklaces, bracelets and other accesories with macramé technique"
+    },
+    {
+      "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
+    }
+  ]}
   ]
 }
 
@@ -478,12 +517,15 @@
 	    var div = document.getElementById(key);
 	    var contentInfo = info[key]
 	    if (key == "skills"){
-	    	console.log("Skills")
-	        // loadSkills(div, contentInfo, key)
+	    	loadSkills(div, contentInfo, key)
 	    }
 	    else if (['education', 'working', 'research'].indexOf(key) != -1) {
+	    	loadExperience(div, contentInfo, _type)
+	    }
+	    else if (key == "other_activities"){
 	    	console.log('LOADING')
-	        loadExperience(div, contentInfo, _type)
+	    	loadOther(div, contentInfo)
+	        
 	    }
 	    
 	}
