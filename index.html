@@ -1,523 +1,536 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Ivania Donoso</title>
-<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.css">
-<link href="style.css" rel="stylesheet">
-</head>
-<body>
-<div class="container"> 
-
-<div classs="row">
-	<div class="col-md-3">
-		<img src="perfil.jpg" alt="IvaniaDonoso" class="profile">
-		<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-		<a href="mailto:ivania.donoso@gmail.com?Subject=[CV]%20Contact" target="_top">ivania.donoso@gmail.com</a></p>
-		<p> <a href="https://github.com/indonoso"><img src="GitHub-Mark-32px.png" class="icon"></a></p>
-		<p>Explicar quién soy jajaja</p>
-	</div>
-	<div class="col-md-9">
-		<ul class="nav nav-tabs">
-		  <li role="presentation" class="active" ><a href="#research" aria-controls="research" role="tab" data-toggle="tab">Research</a></li>
-		  <li role="presentation"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
-		  <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
-		  <li role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Working Experience</a></li>
-		  <li role="presentation"><a href="#other_activities" aria-controls="other_activities" role="tab" data-toggle="tab">Interests</a></li>
-		</ul>
-	 <div class="tab-content">
-	    <div role="tabpanel" class="tab-pane active" id="research"> </div>
-	    <div role="tabpanel" class="tab-pane" id="skills"></div>
-	    <div role="tabpanel" class="tab-pane" id="other_activities"></div>
-	    <div role="tabpanel" class="tab-pane" id="education"></div>
-	    <div role="tabpanel" class="tab-pane" id="working"></div>
-	  </div>
-	</div>
-<div class="row"></div>
-<script>
-    function loadDatesCity(dates_, city_) {
-        var left = document.createElement("div");
-        left.setAttribute('class', 'col-md-2');
-        var dates = document.createElement("p");
-        dates.setAttribute('class', 'dates')
-        dates.appendChild(document.createTextNode(dates_))
-        var city = document.createElement("p");
-        city.appendChild(document.createTextNode(city_))
-        city.setAttribute('class', 'city')
-        left.appendChild(dates)
-        left.appendChild(city)
-        return left
-    }
-    function loadExperience(div, contentInfo, _type) {
-        for (var i = 0; i < contentInfo.length; i++) {
-
-            var row = document.createElement("div");
-            row.setAttribute('class', 'row');
-            div.appendChild(row)
-
-            // Fecha y ciudad
-            var left = loadDatesCity(contentInfo[i]['dates'], contentInfo[i]['city'])
-            var right = document.createElement("div");
-            right.setAttribute('class', 'col-md-10');
-            if (_type) {
-                // Contenido
-                var what = document.createElement("h4");
-                what.setAttribute('class', 'what')
-                what.innerHTML = contentInfo[i]['what']
-                var where = document.createElement("p");
-                where.setAttribute('class', 'where')
-                where.innerHTML = contentInfo[i]['where']
-                var extra = document.createElement("p");
-                extra.innerHTML = contentInfo[i]['relevant_classes']
-                right.appendChild(what)
-                right.appendChild(where)
-                right.appendChild(extra)
-            } else {
-                var what = document.createElement("h4");
-                what.setAttribute('class', 'what')
-                what.innerHTML = contentInfo[i]['what']
-                var where = document.createElement("p");
-                where.setAttribute('class', 'where')            
-                where.innerHTML = contentInfo[i]['where']
-                right.appendChild(what)
-                right.appendChild(where)
-                if (contentInfo[i]['activities'].length > 0){
-                	var extra = document.createElement("p");
-                	extra.innerHTML = contentInfo[i]['activities']
-                	extra.setAttribute('class', 'extra')
-                	right.appendChild(extra)
-                }                
-                
-                
-                if (contentInfo[i]['bullet_points'].length > 0) {
-                    var bullet = document.createElement("ul")
-                    for (var j = 0; j < contentInfo[i]['bullet_points'].length; j++) {
-                        var li = document.createElement("li")
-                        li.innerHTML = contentInfo[i]['bullet_points'][j]
-                        bullet.appendChild(li)
-                    }
-                    right.appendChild(bullet)
-                }
-
-
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Ivania Donoso</title>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.css">
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div classs="row">
+            <div class="col-md-3">
+               <img src="perfil.jpg" alt="IvaniaDonoso" class="profile">
+               <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                  <a href="mailto:ivania.donoso@gmail.com?Subject=[CV]%20Contact" target="_top">ivania.donoso@gmail.com</a>
+               </p>
+               <p> <a href="https://github.com/indonoso"><img src="GitHub-Mark-32px.png" class="icon"></a></p>
+               <p>Explicar quién soy jajaja</p>
+            </div>
+            <div class="col-md-9">
+               <ul class="nav nav-tabs">
+                  <li role="presentation" ><a href="#research" aria-controls="research" role="tab" data-toggle="tab">Research</a></li>
+                  <li role="presentation" class="active"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
+                  <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
+                  <li role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Working Experience</a></li>
+                  <li role="presentation"><a href="#other_activities" aria-controls="other_activities" role="tab" data-toggle="tab">Interests</a></li>
+               </ul>
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane" id="research"> </div>
+                  <div role="tabpanel" class="tab-pane active" id="skills">
+                  <div class="row">
+                  <div class="col-md-6">
+                    <h4>Programming Languages</h4>
+                     <div id="chart_pl">
+                        <svg height="100" width="200"></svg>
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <h4>Data Bases</h4>
+                     <div id="chart_db">
+                        <svg height="100" width="200"></svg>
+                     </div></div>
+                  </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="other_activities"></div>
+                  <div role="tabpanel" class="tab-pane" id="education"></div>
+                  <div role="tabpanel" class="tab-pane" id="working"></div>
+               </div>
+            </div>
+         </div>
+         <script  type="text/javascript">
+            function loadDatesCity(dates_, city_) {
+                var left = document.createElement("div");
+                left.setAttribute('class', 'col-md-2');
+                var dates = document.createElement("p");
+                dates.setAttribute('class', 'dates')
+                dates.appendChild(document.createTextNode(dates_))
+                var city = document.createElement("p");
+                city.appendChild(document.createTextNode(city_))
+                city.setAttribute('class', 'city')
+                left.appendChild(dates)
+                left.appendChild(city)
+                return left
             }
-
-            row.appendChild(left)
-            row.appendChild(right)
-
-        }
-    }
-    function loadSkills(div, contentInfo, key) {
-        var row = document.createElement("div");
-        row.setAttribute('class', 'row');
-
-        div.appendChild(row)
-        var right = document.createElement("div");
-        right.setAttribute('class', 'col-md-12');
-        row.appendChild(right)
-        for (section in contentInfo) {
-            if (section == "Programming Languages") {
-                var h3 = document.createElement("h3")
-                h3.innerHTML = section
-                var divChart = document.createElement("div")
-                divChart.setAttribute("id", "chart_pl")
-                var chart = document.createElement("svg")
-                chart.setAttribute("height", "100px")
-                chart.setAttribute("width", "100px")
-                divChart.appendChild(chart)
-                right.appendChild(h3)
-                right.appendChild(divChart)
-         
-                var aux = [
-                        {
-                            key: 'Series1',
-                            color: '#d62728',
-                            values:  contentInfo[section]
+            function loadExperience(div, contentInfo, _type) {
+                for (var i = 0; i < contentInfo.length; i++) {
+            
+                    var row = document.createElement("div");
+                    row.setAttribute('class', 'row');
+                    div.appendChild(row)
+            
+                    // Fecha y ciudad
+                    var left = loadDatesCity(contentInfo[i]['dates'], contentInfo[i]['city'])
+                    var right = document.createElement("div");
+                    right.setAttribute('class', 'col-md-10');
+                    if (_type) {
+                        // Contenido
+                        var what = document.createElement("h4");
+                        what.setAttribute('class', 'what')
+                        what.innerHTML = contentInfo[i]['what']
+                        var where = document.createElement("p");
+                        where.setAttribute('class', 'where')
+                        where.innerHTML = contentInfo[i]['where']
+                        var extra = document.createElement("p");
+                        extra.innerHTML = contentInfo[i]['relevant_classes']
+                        right.appendChild(what)
+                        right.appendChild(where)
+                        right.appendChild(extra)
+                    } else {
+                        var what = document.createElement("h4");
+                        what.setAttribute('class', 'what')
+                        what.innerHTML = contentInfo[i]['what']
+                        var where = document.createElement("p");
+                        where.setAttribute('class', 'where')            
+                        where.innerHTML = contentInfo[i]['where']
+                        right.appendChild(what)
+                        right.appendChild(where)
+                        if (contentInfo[i]['activities'].length > 0){
+                          var extra = document.createElement("p");
+                          extra.innerHTML = contentInfo[i]['activities']
+                          extra.setAttribute('class', 'extra')
+                          right.appendChild(extra)
+                        }                
+                        
+                        
+                        if (contentInfo[i]['bullet_points'].length > 0) {
+                            var bullet = document.createElement("ul")
+                            for (var j = 0; j < contentInfo[i]['bullet_points'].length; j++) {
+                                var li = document.createElement("li")
+                                li.innerHTML = contentInfo[i]['bullet_points'][j]
+                                bullet.appendChild(li)
+                            }
+                            right.appendChild(bullet)
                         }
-                    ]
-                console.log(aux)
-                nv.addGraph(function() {
-                    chart = nv.models.multiBarHorizontalChart()
-                        .x(function(d) { return d.name })
-                        .y(function(d) { return d.expertise })
-                        .barColor(d3.scale.category20().range())
-                        .duration(250)
-                        .stacked(false);
-
-                    console.log(chart)
-
-                    chart.yAxis.tickFormat(d3.format(',.0f'));
-
-                    d3.select("#chart_pl svg")
-                        .datum(aux)
-                        .call(chart);
-
-                    nv.utils.windowResize(chart.update);
-                });
-
-
-
+            
+            
+                    }
+            
+                    row.appendChild(left)
+                    row.appendChild(right)
+            
+                }
             }
-        }
-    }
+            function loadSkills(contentInfo, section, chart_id) {
+              var values = []
+              console.log(contentInfo[section])
+              for (var i = 0; i < contentInfo[section].length; i++) {
+                values.push({label: contentInfo[section][i]['name'], value: contentInfo[section][i]['expertise']})
+              }         
+                
+              //Each bar represents a single discrete quantity.
+              console.log(values)
+              
+              nv.addGraph(function() {
+              chart = nv.models.multiBarHorizontalChart()
+                .x(function(d) { return d.label })
+                .y(function(d) { return d.value })
+                .barColor(d3.scale.category10().range())
+                .margin({top: 30, left: 80})
+                .showYAxis(false)
+                .showValues(false)           //Show bar value next to each bar.
+                .duration(350)
+                .showLegend(false)
+                .showControls(false);        //Allow user to switch between "Grouped" and "Stacked" mode.
+              
+                //.tooltip.enabled(true)             //Show tooltips on hover.
+              
+              var aux = [
+                        {
+                            key: section,
+                            values:  values
+                        }
+                              ]
+              
+              d3.select(chart_id + ' svg')
+              .datum(aux)
+              .call(chart);
+              
+              nv.utils.windowResize(chart.update);
+              
+              return chart;
+              }, function() {
+                  chart.dispatch.on("renderEnd", function(e){
+                  var legends = document.querySelectorAll(".tick text")
+                  console.log(legends)
+                  console.log('render complete'); 
+                  })
+              
+              });}
 
-    function loadOther(div, contentInfo){
-    	var row = document.createElement("div");
-        row.setAttribute('class', 'row');
-        div.appendChild(row)
-        var content = document.createElement("div");
-        content.setAttribute('class', 'col-md-12');
-        row.appendChild(content)
-        var ul = document.createElement("ul")
-        last_index = contentInfo.length - 1
-        for (var i = 0; i < last_index; i++) {
-    		var li = document.createElement("li")
-    		li.innerHTML = contentInfo[i]
-    		ul.appendChild(li)        	
-        }
-        content.appendChild(ul)
-        var other_interests = document.createElement("h3")
-        other_interests.innerHTML = "Non-Academic interests"
-        content.appendChild(other_interests)
-		for  (var key in contentInfo[last_index]){
-			var title = document.createElement("h4")
-			title.innerHTML = key
-			var explanation = document.createElement("p")
-			explanation.innerHTML = contentInfo[last_index][key]
-			content.appendChild(title)
-			content.appendChild(explanation)
-		}
-
-	}
-     
-    
- var chart;
- info = 
- {"education": [
-    {
-      "dates": "March 2010 - July 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Bachelor of Engineering",
-      "relevant_classes": "advanced programming, optimization, software enginering, databases,  computer architecture, discrete mathematics"
-    },
-    {
-      "dates": "September 2012 - June 2014",
-      "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
-      "city": "Lille, Francia",
-      "what": "Generalist Engineering. Double Diplome Program",
-      "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
-    },
-    {
-      "dates": "August 2014 - July 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Industrial Engineering, Information Technology diploma",
-      "relevant_classes": "Technologies for strategic management, TI project management, TI operations management, operations management, project evaluation, finance, marketing"
-    },
-    {
-      "dates": "March 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Master of Engineering Science, Computer Science specialty",
-      "relevant_classes": "Classification of medicine research articles with TextMining and visualization"
-    }
-  ],
-  "working": [
-    {
-      "dates": "October 2012 - March 2014",
-      "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
-      "city": "Lille, France",
-      "what": "Activité Projet Centrale Lille",
-      "activities": "Creation of software to help the management of the paediatric area of CHRU Lille (Centre Hospitalier Régional Universitaire de Lille)",
-      "bullet_points": [
-        "Budget of 10 k€ given by French National Research Agency (ANR)",
-        "In charge of finding indicators of tension in a two-year data base of the hospital",
-        "<a class=\"link\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/25160202\">Paper</a>"
-        ]
-    },
-    {
-      "dates": "January 2013",
-      "where": "Furet du Nord",
-      "city": "Lille, France",
-      "what": "\"Discover the company\" Internship",
-      "activities": "Preparation of annual inventory and costumer information",
-      "bullet_points": []
-    },
-    {
-      "dates": "April 2014 - July 2014",
-      "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
-      "city": "Lille, Francia",
-      "what": "Professional Internship",
-      "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
-      "bullet_points": []
-    },
-    {
-      "dates": "August 2015 - December 2015",
-      "where": "Accuehealth",
-      "city": "Santiago, Chile",
-      "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">SinLímites program</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
-      "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
-      "bullet_points": [
-        "Aplication of data mining and machine learning technique to health records",
-        "Results in the areas of operations management and patient's health"
-      ]
-    },
-    {
-      "dates": "December 2015",
-      "where": "Sonda and Innovation Center Anacleto Angelini UC",
-      "city": "Santiago, Chile",
-      "what": "Sonda Consultant for the consultancy program of the Innovation Center Anacleto Angelini UC",
-      "activities": "Automatization and innovation consultant",
-      "bullet_points": []
-    }
-  ],
-  "research": [
-    {
-      "dates": "August - December 2011",
-      "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Undergraduate research",
-      "activities": "Study of a collaborative software for 12 years old students",
-      "bullet_points": []
-    },
-    {
-      "dates": "March - July 2012",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Advanced Programming",
-        "Introduction to Programming"
-      ]
-    },
-    {
-      "dates": "August 2015 - July 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Research Assitant at the Industrial and Systems Deparment",
-      "activities": "",
-      "bullet_points": []
-    },
-    {
-      "dates": "March - July 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "<a class=\"link\" href=\"https://github.com/IIC2233-2015-1/syllabus\">Advanced Programming</a>",
-        "Data Mining (Master of information management)",
-        "Data Mining (Bussiness Inteligence course for professionals)"
-      ]
-    },
-    {
-      "dates": "August - December 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "<a class=\"link\" href=\"https://github.com/IIC2233-2015-2/syllabus\">Advanced Programming</a>",
-        "Data Mining",
-        "<a class=\"link\" href=\"http://dparra.sitios.ing.uc.cl/classes/recsys-2015-2/\">Recommender Systems</a>"
-      ]
-    },
-    {
-      "dates": "March - July 2016",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "<a class=\"link\" href=\"https://github.com/IIC2233-2016-1/syllabus\">Advanced Programming (Chief of Assitantship area)</a>",
-        "Data Mining (Bussiness Inteligence course for professionals)"
-      ]
-    },
-    {
-      "dates": "Agosto 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Master's Thesis",
-      "activities": "Classification of medicine research articles with TextMining and visualization",
-      "bullet_points": []
-    }
-  ],
-  "skills": {
-    "Programming Languages": [
-      {
-        "name": "Python",
-        "expertise": 100,
-        "library": [
-          {
-            "name": "numpy",
-            "expertise": 100
-          },
-          {
-            "name": "pandas",
-            "expertise": 100
-          },
-          {
-            "name": "scikit-learn",
-            "expertise": 100
-          },
-          {
-            "name": "scipy",
-            "expertise": 90
-          },
-          {
-            "name": "matplotlib",
-            "expertise": 85
-          },
-          {
-            "name": "beautifulSoup",
-            "y": 85
-          },
-          {
-            "name": "Django",
-            "expertise": 50
-          }
-        ]
-      },
-      {
-        "name": "Java",
-        "expertise": 85,
-        "library": ""
-      },
-      {
-        "name": "C#",
-        "expertise": 90,
-        "library": [
-          {
-            "name": "ASP .NET",
-            "expertise": 10
-          }
-        ]
-      },
-      {
-        "name": "Ruby",
-        "expertise": 60,
-        "library": [
-          {
-            "name": "Rails",
-            "expertise": 50
-          }
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "expertise": 40,
-        "library": [
-          {
-            "name": "d3",
-            "expertise": 70
-          }
-        ]
-      },
-      {
-        "name": "C",
-        "expertise": 20,
-        "library": ""
-      },
-      {
-        "name": "C-Cuda",
-        "expertise": 10,
-        "library": ""
-      }
-    ],
-    "Data Bases": [
-      {
-        "name": "MySQL",
-        "expertise": 90
-      },
-      {
-        "name": "postgreSQL",
-        "expertise": 90
-      },
-      {
-        "name": "Oracle",
-        "expertise": 90
-      },
-      {
-        "name": "PLSQL",
-        "expertise": 90
-      },
-      {
-        "name": "Mongo",
-        "expertise": 70
-      }
-    ],
-    "Software and OS":
-    ["Tableau", "Pycharm", "Ubuntu 14.04", "CentOS"],
-    "languages": {
-      "Spanish": "Native",
-      "English": [
-        "Advanced",
-        [
-          "One year as a exchange student in New Zealand (Cashmere High School, Christchurch)",
-          "TOEIC 2014: 965",
-          "TOEIC 2010: 915"
-        ]
-      ],
-      "French": [
-        "Avanzado",
-        [
-          "Two years as a student at <a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille</a>",
-          "Diploma DALF C1 in 2014"
-        ]
-      ]
-    }
-    
-  } 
-  ,
-  'other_activities': [
-  "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
-  "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Centerpa Anacleto Angelini UC",
-  "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
-  "Emerging issues committee Chief 2012 of the Engineering Student Center", 
-  "Secretary of the ACM Student Chapter at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
-  {
-    
-      "Languages": "I'm very interested in learning other languages. I speak english and french, and I want to learn German. In 2011 and studied it at my university."
-   ,
-      "Knitting": "I chrochet scarves and beanis. I also make necklaces, bracelets and other accesories with macramé technique"
-    ,
-      "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
-    }
-  ]
-}
-
-
-</script>
-<script type="text/javascript">
-	$('document').ready(function() {
-
-	for (var key in info) {
-	    var _type = key == "education" ? true : false
-	    var div = document.getElementById(key);
-	    var contentInfo = info[key]
-	    if (key == "skills"){
-	    	loadSkills(div, contentInfo, key)
-	    }
-	    else if (['education', 'working', 'research'].indexOf(key) != -1) {
-	    	loadExperience(div, contentInfo, _type)
-	    }
-	    else if (key == "other_activities"){
-	    	loadOther(div, contentInfo)
-	        
-	    }
-	    
-	}
-})
-</script>
-</div>
-</body>
+            
+            function loadOther(div, contentInfo){
+              var row = document.createElement("div");
+              row.setAttribute('class', 'row');
+              div.appendChild(row)
+              var content = document.createElement("div");
+              content.setAttribute('class', 'col-md-12');
+              row.appendChild(content)
+              var ul = document.createElement("ul")
+              last_index = contentInfo.length - 1
+              for (var i = 0; i < last_index; i++) {
+              var li = document.createElement("li")
+              li.innerHTML = contentInfo[i]
+              ul.appendChild(li)          
+              }
+              content.appendChild(ul)
+              var other_interests = document.createElement("h3")
+              other_interests.innerHTML = "Non-Academic interests"
+              content.appendChild(other_interests)
+              for  (var key in contentInfo[last_index]){
+                var title = document.createElement("h4")
+                title.innerHTML = key
+                var explanation = document.createElement("p")
+                explanation.innerHTML = contentInfo[last_index][key]
+                content.appendChild(title)
+                content.appendChild(explanation)
+              }
+            }
+             
+            
+            var chart;
+            info = 
+            {"education": [
+            {
+              "dates": "March 2010 - July 2014",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Bachelor of Engineering",
+              "relevant_classes": "advanced programming, optimization, software enginering, databases,  computer architecture, discrete mathematics"
+            },
+            {
+              "dates": "September 2012 - June 2014",
+              "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
+              "city": "Lille, Francia",
+              "what": "Generalist Engineering. Double Diplome Program",
+              "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
+            },
+            {
+              "dates": "August 2014 - July 2015",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Industrial Engineering, Information Technology diploma",
+              "relevant_classes": "Technologies for strategic management, TI project management, TI operations management, operations management, project evaluation, finance, marketing"
+            },
+            {
+              "dates": "March 2015 - ",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Master of Engineering Science, Computer Science specialty",
+              "relevant_classes": "Classification of medicine research articles with TextMining and visualization"
+            }
+            ],
+            "working": [
+            {
+              "dates": "October 2012 - March 2014",
+              "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
+              "city": "Lille, France",
+              "what": "Activité Projet Centrale Lille",
+              "activities": "Creation of software to help the management of the paediatric area of CHRU Lille (Centre Hospitalier Régional Universitaire de Lille)",
+              "bullet_points": [
+                "Budget of 10 k€ given by French National Research Agency (ANR)",
+                "In charge of finding indicators of tension in a two-year data base of the hospital",
+                "<a class=\"link\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/25160202\">Paper</a>"
+                ]
+            },
+            {
+              "dates": "January 2013",
+              "where": "Furet du Nord",
+              "city": "Lille, France",
+              "what": "\"Discover the company\" Internship",
+              "activities": "Preparation of annual inventory and costumer information",
+              "bullet_points": []
+            },
+            {
+              "dates": "April 2014 - July 2014",
+              "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
+              "city": "Lille, Francia",
+              "what": "Professional Internship",
+              "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
+              "bullet_points": []
+            },
+            {
+              "dates": "August 2015 - December 2015",
+              "where": "Accuehealth",
+              "city": "Santiago, Chile",
+              "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">SinLímites program</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
+              "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
+              "bullet_points": [
+                "Aplication of data mining and machine learning technique to health records",
+                "Results in the areas of operations management and patient's health"
+              ]
+            },
+            {
+              "dates": "December 2015",
+              "where": "Sonda and Innovation Center Anacleto Angelini UC",
+              "city": "Santiago, Chile",
+              "what": "Sonda Consultant for the consultancy program of the Innovation Center Anacleto Angelini UC",
+              "activities": "Automatization and innovation consultant",
+              "bullet_points": []
+            }
+            ],
+            "research": [
+            {
+              "dates": "August - December 2011",
+              "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Undergraduate research",
+              "activities": "Study of a collaborative software for 12 years old students",
+              "bullet_points": []
+            },
+            {
+              "dates": "March - July 2012",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "Advanced Programming",
+                "Introduction to Programming"
+              ]
+            },
+            {
+              "dates": "August 2015 - July 2014",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Research Assitant at the Industrial and Systems Deparment",
+              "activities": "",
+              "bullet_points": []
+            },
+            {
+              "dates": "March - July 2015",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "<a class=\"link\" href=\"https://github.com/IIC2233-2015-1/syllabus\">Advanced Programming</a>",
+                "Data Mining (Master of information management)",
+                "Data Mining (Bussiness Inteligence course for professionals)"
+              ]
+            },
+            {
+              "dates": "August - December 2015",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "<a class=\"link\" href=\"https://github.com/IIC2233-2015-2/syllabus\">Advanced Programming</a>",
+                "Data Mining",
+                "<a class=\"link\" href=\"http://dparra.sitios.ing.uc.cl/classes/recsys-2015-2/\">Recommender Systems</a>"
+              ]
+            },
+            {
+              "dates": "March - July 2016",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "<a class=\"link\" href=\"https://github.com/IIC2233-2016-1/syllabus\">Advanced Programming (Chief of Assitantship area)</a>",
+                "Data Mining (Bussiness Inteligence course for professionals)"
+              ]
+            },
+            {
+              "dates": "Agosto 2015 - ",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Master's Thesis",
+              "activities": "Classification of medicine research articles with TextMining and visualization",
+              "bullet_points": []
+            }
+            ],
+            "skills": {
+            "Programming Languages": [
+              {
+                "name": "Python",
+                "expertise": 100,
+                "library": [
+                  {
+                    "name": "numpy",
+                    "expertise": 100
+                  },
+                  {
+                    "name": "pandas",
+                    "expertise": 100
+                  },
+                  {
+                    "name": "scikit-learn",
+                    "expertise": 100
+                  },
+                  {
+                    "name": "scipy",
+                    "expertise": 90
+                  },
+                  {
+                    "name": "matplotlib",
+                    "expertise": 85
+                  },
+                  {
+                    "name": "beautifulSoup",
+                    "y": 85
+                  },
+                  {
+                    "name": "Django",
+                    "expertise": 50
+                  }
+                ]
+              },
+              {
+                "name": "Java",
+                "expertise": 85,
+                "library": ""
+              },
+              {
+                "name": "C#",
+                "expertise": 90,
+                "library": [
+                  {
+                    "name": "ASP .NET",
+                    "expertise": 10
+                  }
+                ]
+              },
+              {
+                "name": "Ruby",
+                "expertise": 60,
+                "library": [
+                  {
+                    "name": "Rails",
+                    "expertise": 50
+                  }
+                ]
+              },
+              {
+                "name": "JavaScript",
+                "expertise": 40,
+                "library": [
+                  {
+                    "name": "d3",
+                    "expertise": 70
+                  }
+                ]
+              },
+              {
+                "name": "C",
+                "expertise": 20,
+                "library": ""
+              },
+              {
+                "name": "C-Cuda",
+                "expertise": 10,
+                "library": ""
+              }
+            ],
+            "Data Bases": [
+              {
+                "name": "MySQL",
+                "expertise": 90
+              },
+              {
+                "name": "postgreSQL",
+                "expertise": 90
+              },
+              {
+                "name": "Oracle",
+                "expertise": 90
+              },
+              {
+                "name": "PLSQL",
+                "expertise": 90
+              },
+              {
+                "name": "Mongo",
+                "expertise": 70
+              }
+            ],
+            "Software and OS":
+            ["Tableau", "Pycharm", "Ubuntu 14.04", "CentOS"],
+            "languages": {
+              "Spanish": "Native",
+              "English": [
+                "Advanced",
+                [
+                  "One year as a exchange student in New Zealand (Cashmere High School, Christchurch)",
+                  "TOEIC 2014: 965",
+                  "TOEIC 2010: 915"
+                ]
+              ],
+              "French": [
+                "Avanzado",
+                [
+                  "Two years as a student at <a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille</a>",
+                  "Diploma DALF C1 in 2014"
+                ]
+              ]
+            }
+            
+            } 
+            ,
+            'other_activities': [
+            "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
+            "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Centerpa Anacleto Angelini UC",
+            "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
+            "Emerging issues committee Chief 2012 of the Engineering Student Center", 
+            "Secretary of the ACM Student Chapter at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
+            {
+            
+              "Languages": "I'm very interested in learning other languages. I speak english and french, and I want to learn German. In 2011 and studied it at my university."
+            ,
+              "Knitting": "I chrochet scarves and beanis. I also make necklaces, bracelets and other accesories with macramé technique"
+            ,
+              "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
+            }
+            ]
+            }
+            
+            
+         </script>
+         <script type="text/javascript">
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              window.dispatchEvent(new Event('resize'));
+            })
+            
+            $('document').ready(function() {
+            
+              for (var key in info) {
+                var _type = key == "education" ? true : false
+                var div = document.getElementById(key);
+                var contentInfo = info[key]
+                if (key == "skills"){
+                  var title = document.createElement("h4")
+                  loadSkills(contentInfo, "Programming Languages", "#chart_pl")
+                  var title = document.createElement("h4")
+                  
+                  loadSkills(contentInfo, "Data Bases", "#chart_db")
+                }
+                else if (['education', 'working', 'research'].indexOf(key) != -1) {
+                  loadExperience(div, contentInfo, _type)
+                }
+                else if (key == "other_activities"){
+                  loadOther(div, contentInfo)
+                  
+                }
+              }
+            })
+            
+         </script>
+      </div>
+   </body>
 </html>
