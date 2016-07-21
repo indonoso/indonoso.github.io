@@ -9,8 +9,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
-    <script src="nv.d3.js"></script>
-    <link rel="stylesheet" href="nv.d3.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.4/nv.d3.css">
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -31,12 +31,11 @@
 		  <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
 		  <li role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Working Experience</a></li>
 		  <li role="presentation"><a href="#other_activities" aria-controls="other_activities" role="tab" data-toggle="tab">Interests</a></li>
-		  <li role="presentation"><a href="#oskills" aria-controls="oskills" role="tab" data-toggle="tab">Other Skills</a></li>
 		</ul>
 	 <div class="tab-content">
 	    <div role="tabpanel" class="tab-pane active" id="research"> </div>
 	    <div role="tabpanel" class="tab-pane" id="skills"></div>
-	    <div role="tabpanel" class="tab-pane" id="other_interests"></div>
+	    <div role="tabpanel" class="tab-pane" id="other_activities"></div>
 	    <div role="tabpanel" class="tab-pane" id="education"></div>
 	    <div role="tabpanel" class="tab-pane" id="working"></div>
 	  </div>
@@ -81,7 +80,6 @@
                 right.appendChild(where)
                 right.appendChild(extra)
             } else {
-            	console.log("Otro!")
                 var what = document.createElement("h4");
                 what.setAttribute('class', 'what')
                 what.innerHTML = contentInfo[i]['what']
@@ -98,7 +96,6 @@
                 }                
                 
                 
-                console.log(contentInfo[i]['bullet_points'])
                 if (contentInfo[i]['bullet_points'].length > 0) {
                     var bullet = document.createElement("ul")
                     for (var j = 0; j < contentInfo[i]['bullet_points'].length; j++) {
@@ -128,15 +125,16 @@
         for (section in contentInfo) {
             if (section == "Programming Languages") {
                 var h3 = document.createElement("h3")
-                h3.appendChild(document.createTextNode(section))
-
+                h3.innerHTML = section
                 var divChart = document.createElement("div")
-                divChart.setAttribute("id", "chart" + section[0])
+                divChart.setAttribute("id", "chart_pl")
                 var chart = document.createElement("svg")
+                chart.setAttribute("height", "100px")
+                chart.setAttribute("width", "100px")
                 divChart.appendChild(chart)
                 right.appendChild(h3)
                 right.appendChild(divChart)
-
+         
                 var aux = [
                         {
                             key: 'Series1',
@@ -149,26 +147,19 @@
                     chart = nv.models.multiBarHorizontalChart()
                         .x(function(d) { return d.name })
                         .y(function(d) { return d.expertise })
-                        .yErr(function(d) { return [-Math.abs(d.value * Math.random() * 0.3), Math.abs(d.value * Math.random() * 0.3)] })
                         .barColor(d3.scale.category20().range())
                         .duration(250)
-                        .stacked(true);
+                        .stacked(false);
 
                     console.log(chart)
 
-                    chart.yAxis.tickFormat(d3.format(',.2f'));
+                    chart.yAxis.tickFormat(d3.format(',.0f'));
 
-                    d3.select("#chart" + section[0] + " svg")
+                    d3.select("#chart_pl svg")
                         .datum(aux)
                         .call(chart);
 
                     nv.utils.windowResize(chart.update);
-
-                    chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
-                    chart.state.dispatch.on('change', function(state){
-                        nv.log('state', JSON.stringify(state));
-                    });
-                    return chart;
                 });
 
 
@@ -187,22 +178,23 @@
         var ul = document.createElement("ul")
         last_index = contentInfo.length - 1
         for (var i = 0; i < last_index; i++) {
-        	
-        		var li = document.createElement("li")
-        		li.innerHTML = contentInfo[i]
-        		ul.appendChild(li)
-        	
+    		var li = document.createElement("li")
+    		li.innerHTML = contentInfo[i]
+    		ul.appendChild(li)        	
         }
-        content.append(ul)
-        var other_interests = document.createElement("h5")
+        content.appendChild(ul)
+        var other_interests = document.createElement("h3")
         other_interests.innerHTML = "Non-Academic interests"
+        content.appendChild(other_interests)
 		for  (var key in contentInfo[last_index]){
-			var title = document.createElement("h6")
+			var title = document.createElement("h4")
 			title.innerHTML = key
-			var explanation = contentInfo[last_index][key]
+			var explanation = document.createElement("p")
+			explanation.innerHTML = contentInfo[last_index][key]
 			content.appendChild(title)
 			content.appendChild(explanation)
 		}
+
 	}
      
     
@@ -492,17 +484,14 @@
   "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
   "Emerging issues committee Chief 2012 of the Engineering Student Center", 
   "Secretary of the ACM Student Chapter at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
-  {"interests": [
-    {
+  {
+    
       "Languages": "I'm very interested in learning other languages. I speak english and french, and I want to learn German. In 2011 and studied it at my university."
-    },
-    {
+   ,
       "Knitting": "I chrochet scarves and beanis. I also make necklaces, bracelets and other accesories with macramé technique"
-    },
-    {
+    ,
       "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
     }
-  ]}
   ]
 }
 
@@ -512,7 +501,6 @@
 	$('document').ready(function() {
 
 	for (var key in info) {
-				console.log(key)
 	    var _type = key == "education" ? true : false
 	    var div = document.getElementById(key);
 	    var contentInfo = info[key]
@@ -523,7 +511,6 @@
 	    	loadExperience(div, contentInfo, _type)
 	    }
 	    else if (key == "other_activities"){
-	    	console.log('LOADING')
 	    	loadOther(div, contentInfo)
 	        
 	    }

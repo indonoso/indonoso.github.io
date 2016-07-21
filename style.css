@@ -38,3 +38,7 @@ a.link{
 a.link:hover{
 	text-decoration: underline;
 }
+svg{
+	height: 200px;
+	width: 200px;
+}
