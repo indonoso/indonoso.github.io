@@ -3,8 +3,11 @@ img.profile{
 	width: auto;
 }
 img.icon{
-	height: 10px;
+	height: 20px;
 	width: auto;
+}
+.glyphicon{
+	font-size: 20px;
 }
 .what{
 	margin-bottom: 0px;
@@ -52,9 +55,6 @@ svg{
 	border-radius: 10px;
 	padding: 20px;
 }
-.nav.nav-pills .active a{
-	background-color: #2F2D42;
-}
 
 .nav-pills>li.active>a{
 	background-color: #2F2D42;
@@ -83,8 +83,8 @@ svg{
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #CE2D59;
-  background-color: #2F2D42;
+  color: #2F2D42;
+  background-color: #CE2D59;
   border: 1px solid transparent;
   border-bottom-color: transparent;
   cursor: default;
@@ -93,8 +93,18 @@ svg text {
     fill: #fedbb1;
 }
 div.container{
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .tab-content > div {
 	height: 500px;
+}
+.row {
+	margin-bottom: 30px;
+}
+#skills .row {
+	margin-bottom: 10px;
+}
+p.description{
+	font-size: 12px;
+
 }

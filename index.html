@@ -17,36 +17,40 @@
       <div class="container">
          <div classs="row">
             <div class="col-md-3">
-               <img src="perfil.jpg" alt="IvaniaDonoso" class="profile">
+               <img src="perfil.jpg" alt="IvaniaDonoso" class="profile center-block">
+               <h3> Ivania Donoso Guzmán</h3>
                <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                  <a href="mailto:ivania.donoso@gmail.com?Subject=[CV]%20Contact" target="_top">ivania.donoso@gmail.com</a>
+                  <a href="mailto:ivania.donoso@gmail.com?Subject=[CV]%20Contact" target="_top">ivania.donoso@gmail.com</a><br>
+               <a href="https://github.com/indonoso"><img src="GitHub-Mark-32px.png" class="icon"><span>       indonoso</span></a></p>
+               <p class="description text-justify">
+                 I’m a Industrial Civil Engineer gradutate of the Pontificia Universidad Católica de Chile, my specialization is in Information Technology. I’m also a graduate from Ecole Centrale de Lille, France, where I studied two years. I participated during the second semester of 2015 in the program “Desafíos Sín Límites” of the Innovation Center Anacleto Angelini UC for the company Accuhealth. 
+I’m currently working on my master’s thesis in Information Retrieval with <a class="link" href="http://dparra.sitios.ing.uc.cl/">Denis Parra</a> and <a class="link" href="http://kpichara.ing.puc.cl/">Karim Pichara</a> with the support of the non profit organization <a class="link" href="http://www.epistemonikos.org/">Epistemonikos</a>. I’m also a TA in Advance Programming and Recommender Systems
+
                </p>
-               <p> <a href="https://github.com/indonoso"><img src="GitHub-Mark-32px.png" class="icon"></a></p>
-               <p>Explicar quién soy jajaja</p>
             </div>
             <div class="col-md-9">
             <nav class="navbar navbar-default justified" role="navigation">
                <ul class="nav nav-pills justified">
-                  <li role="presentation" ><a href="#research" aria-controls="research" role="tab" data-toggle="tab">Research</a></li>
-                  <li role="presentation" class="active"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
+                  <li role="presentation" class="active"><a href="#research" aria-controls="research" role="tab" data-toggle="tab">Research</a></li>
+                  <li role="presentation" ><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
                   <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
                   <li role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Working Experience</a></li>
                   <li role="presentation"><a href="#other_activities" aria-controls="other_activities" role="tab" data-toggle="tab">Interests</a></li>
                </ul>
                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane" id="research"> </div>
-                  <div role="tabpanel" class="tab-pane active" id="skills">
+                  <div role="tabpanel" class="tab-pane  active" id="research"> </div>
+                  <div role="tabpanel" class="tab-pane" id="skills">
                     <div class="row">
                     <div class="col-md-6">
                       <h4>Programming Languages</h4>
                        <div id="chart_pl">
-                          <svg height="100" width="200"></svg>
+                          <svg height="90" width="200"></svg>
                        </div>
                        </div>
                        <div class="col-md-6">
                        <h4>Data Bases</h4>
                        <div id="chart_db">
-                          <svg height="100" width="200"></svg>
+                          <svg height="90" width="200"></svg>
                        </div></div>
                     </div>
                      <div class="row"><div class="col-md-12" id="languages">
@@ -182,12 +186,15 @@
 
             
             function loadOther(div, contentInfo){
+              var title = document.createElement("h4")
+                title.innerHTML = "Activities"
               var row = document.createElement("div");
               row.setAttribute('class', 'row');
               div.appendChild(row)
               var content = document.createElement("div");
               content.setAttribute('class', 'col-md-12');
               row.appendChild(content)
+              content.appendChild(title)
               var ul = document.createElement("ul")
               last_index = contentInfo.length - 1
               for (var i = 0; i < last_index; i++) {
@@ -196,11 +203,11 @@
               ul.appendChild(li)          
               }
               content.appendChild(ul)
-              var other_interests = document.createElement("h3")
+              var other_interests = document.createElement("h4")
               other_interests.innerHTML = "Non-Academic interests"
               content.appendChild(other_interests)
               for  (var key in contentInfo[last_index]){
-                var title = document.createElement("h4")
+                var title = document.createElement("h5")
                 title.innerHTML = key
                 var explanation = document.createElement("p")
                 explanation.innerHTML = contentInfo[last_index][key]
@@ -214,133 +221,46 @@
             info = 
             {"education": [
             {
-              "dates": "March 2010 - July 2014",
+              "dates": "March 2015 - ",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
-              "what": "Bachelor of Engineering",
-              "relevant_classes": "advanced programming, optimization, software enginering, databases,  computer architecture, discrete mathematics"
-            },
-            {
-              "dates": "September 2012 - June 2014",
-              "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
-              "city": "Lille, Francia",
-              "what": "Generalist Engineering. Double Diplome Program",
-              "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
+              "what": "Master of Engineering Science, Computer Science specialty",
+              "relevant_classes": "Classification of medicine research articles with TextMining and Visualization"
             },
             {
               "dates": "August 2014 - July 2015",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Industrial Engineering, Information Technology diploma",
-              "relevant_classes": "Technologies for strategic management, TI project management, TI operations management, operations management, project evaluation, finance, marketing"
+              "relevant_classes": "Technologies for Strategic Management, TI Project Management, TI Operations Management, Operations Management, Project Evaluation, finance, marketing"
             },
             {
-              "dates": "March 2015 - ",
+              "dates": "September 2012 - June 2014",
+              "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
+              "city": "Lille, Francia",
+              "what": "Generalist Engineering. Double Diplome Program",
+              "relevant_classes": "Complexity and Advanced Algorithms, Distributed Optimization and Multi-Agent Systems, Logic Programming"
+            },
+            
+            {
+              "dates": "March 2010 - July 2014",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
-              "what": "Master of Engineering Science, Computer Science specialty",
-              "relevant_classes": "Classification of medicine research articles with TextMining and visualization"
-            }
+              "what": "Bachelor of Engineering",
+              "relevant_classes": "Advanced Programming, Optimization, Software Enginering, Databases,  Computer Architecture, Discrete Mathematics"
+            }            
+            
             ],
             "working": [
             {
-              "dates": "October 2012 - March 2014",
-              "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
-              "city": "Lille, France",
-              "what": "Activité Projet Centrale Lille",
-              "activities": "Creation of software to help the management of the paediatric area of CHRU Lille (Centre Hospitalier Régional Universitaire de Lille)",
-              "bullet_points": [
-                "Budget of 10 k€ given by French National Research Agency (ANR)",
-                "In charge of finding indicators of tension in a two-year data base of the hospital",
-                "<a class=\"link\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/25160202\">Paper</a>"
-                ]
-            },
-            {
-              "dates": "January 2013",
-              "where": "Furet du Nord",
-              "city": "Lille, France",
-              "what": "\"Discover the company\" Internship",
-              "activities": "Preparation of annual inventory and costumer information",
-              "bullet_points": []
-            },
-            {
-              "dates": "April 2014 - July 2014",
-              "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
-              "city": "Lille, Francia",
-              "what": "Professional Internship",
-              "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
-              "bullet_points": []
-            },
-            {
-              "dates": "August 2015 - December 2015",
-              "where": "Accuehealth",
-              "city": "Santiago, Chile",
-              "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">SinLímites program</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
-              "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
-              "bullet_points": [
-                "Aplication of data mining and machine learning technique to health records",
-                "Results in the areas of operations management and patient's health"
-              ]
-            },
-            {
-              "dates": "December 2015",
-              "where": "Sonda and Innovation Center Anacleto Angelini UC",
-              "city": "Santiago, Chile",
-              "what": "Sonda Consultant for the consultancy program of the Innovation Center Anacleto Angelini UC",
-              "activities": "Automatization and innovation consultant",
-              "bullet_points": []
-            }
-            ],
-            "research": [
-            {
-              "dates": "August - December 2011",
-              "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
-              "city": "Santiago, Chile",
-              "what": "Undergraduate research",
-              "activities": "Study of a collaborative software for 12 years old students",
-              "bullet_points": []
-            },
-            {
-              "dates": "March - July 2012",
+              "dates": "August - December 2016",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Teaching Asistant at the Computer Science Deparment",
               "activities": "",
               "bullet_points": [
-                "Advanced Programming",
-                "Introduction to Programming"
-              ]
-            },
-            {
-              "dates": "August 2015 - July 2014",
-              "where": "Pontificia Universidad Católica de Chile",
-              "city": "Santiago, Chile",
-              "what": "Research Assitant at the Industrial and Systems Deparment",
-              "activities": "",
-              "bullet_points": []
-            },
-            {
-              "dates": "March - July 2015",
-              "where": "Pontificia Universidad Católica de Chile",
-              "city": "Santiago, Chile",
-              "what": "Teaching Asistant at the Computer Science Deparment",
-              "activities": "",
-              "bullet_points": [
-                "<a class=\"link\" href=\"https://github.com/IIC2233-2015-1/syllabus\">Advanced Programming</a>",
-                "Data Mining (Master of information management)",
-                "Data Mining (Bussiness Inteligence course for professionals)"
-              ]
-            },
-            {
-              "dates": "August - December 2015",
-              "where": "Pontificia Universidad Católica de Chile",
-              "city": "Santiago, Chile",
-              "what": "Teaching Asistant at the Computer Science Deparment",
-              "activities": "",
-              "bullet_points": [
-                "<a class=\"link\" href=\"https://github.com/IIC2233-2015-2/syllabus\">Advanced Programming</a>",
-                "Data Mining",
-                "<a class=\"link\" href=\"http://dparra.sitios.ing.uc.cl/classes/recsys-2015-2/\">Recommender Systems</a>"
+                "<a class=\"link\" href=\"https://github.com/IIC2233-2016-02/syllabus\">Advanced Programming</a>",
+                "Recommender Systems"
               ]
             },
             {
@@ -355,13 +275,122 @@
               ]
             },
             {
+              "dates": "December 2015",
+              "where": "Sonda and Innovation Center Anacleto Angelini UC",
+              "city": "Santiago, Chile",
+              "what": "Sonda Consultant for the consultancy program of the Innovation Center Anacleto Angelini UC",
+              "activities": "Automatization and innovation consultant",
+              "bullet_points": []
+            },
+            {
+              "dates": "August 2015 - December 2015",
+              "where": "<a class=\"link\" href=\"https://www.accuhealth.cl/\" >Accuehealth</a>",
+              "city": "Santiago, Chile",
+              "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">SinLímites program</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
+              "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
+              "bullet_points": [
+                "Aplication of data mining and machine learning technique to health records",
+                "Results in the areas of operations management and patient's health"
+              ]
+            },
+             {
+              "dates": "August - December 2015",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "<a class=\"link\" href=\"https://github.com/IIC2233-2015-2/syllabus\">Advanced Programming</a>",
+                "Data Mining",
+                "<a class=\"link\" href=\"http://dparra.sitios.ing.uc.cl/classes/recsys-2015-2/\">Recommender Systems</a>"
+              ]
+            },
+
+            {
+              "dates": "March - July 2015",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "<a class=\"link\" href=\"https://github.com/IIC2233-2015-1/syllabus\">Advanced Programming</a>",
+                "Data Mining (Master of information management)",
+                "Data Mining (Bussiness Inteligence course for professionals)"
+              ]
+            },
+
+            {
+              "dates": "April 2014 - July 2014",
+              "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
+              "city": "Lille, Francia",
+              "what": "Professional Internship",
+              "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
+              "bullet_points": []
+            },
+            {
+              "dates": "January 2013",
+              "where": "Furet du Nord",
+              "city": "Lille, France",
+              "what": "\"Discover the company\" Internship",
+              "activities": "Preparation of annual inventory and costumer information",
+              "bullet_points": []
+            },
+               {
+              "dates": "March - July 2012",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Teaching Asistant at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "Advanced Programming",
+                "Introduction to Programming"
+              ]
+            },        
+            
+            ],
+            "research": [
+             {
               "dates": "Agosto 2015 - ",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Master's Thesis",
               "activities": "Classification of medicine research articles with TextMining and visualization",
               "bullet_points": []
+            },
+
+            {
+              "dates": "August 2015 - July 2014",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Research Assistant at the Industrial and Systems Deparment",
+              "activities": "Process Modeling at Hospital Salvador",
+              "bullet_points": []
+            },
+                          {
+              "dates": "October 2012 - March 2014",
+              "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
+              "city": "Lille, France",
+              "what": "Activité Projet Centrale Lille",
+              "activities": "Creation of software to help the management of the paediatric area of CHRU Lille (Centre Hospitalier Régional Universitaire de Lille)",
+              "bullet_points": [
+                "Budget of 10 k€ given by French National Research Agency (ANR)",
+                "In charge of finding indicators of tension in a two-year data base of the hospital",
+                "<a class=\"link\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/25160202\">Paper</a>"
+                ]
+            },
+
+            {
+              "dates": "August - December 2011",
+              "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Undergraduate research",
+              "activities": "Study of a collaborative software for 12 years old students",
+              "bullet_points": []
             }
+           
+           
+            
+           
             ],
             "skills": {
             "Programming Languages": [
@@ -445,7 +474,7 @@
                 "library": ""
               },
               {
-                "name": "C-Cuda",
+                "name": "Cuda-C",
                 "expertise": 10,
                 "library": ""
               }
@@ -456,7 +485,7 @@
                 "expertise": 90
               },
               {
-                "name": "postgreSQL",
+                "name": "PostgreSQL",
                 "expertise": 90
               },
               {
@@ -468,7 +497,7 @@
                 "expertise": 90
               },
               {
-                "name": "Mongo",
+                "name": "MongoDB",
                 "expertise": 70
               }
             ],
@@ -477,13 +506,13 @@
             "languages": {
               "Spanish": ["Native"],
               "English": [
-                "Advanced",
+                "Proficient",
                   "One year as a exchange student in New Zealand (Cashmere High School, Christchurch)",
                   "TOEIC 2014: 965",
                   "TOEIC 2010: 915"
               ],
               "French": [
-                "Advanced",
+                "Proficient",
                   "Two years as a student at <a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille</a>",
                   "Diploma DALF C1 in 2014"
               ]
@@ -492,16 +521,19 @@
             } 
             ,
             'other_activities': [
-            "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
             "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Centerpa Anacleto Angelini UC",
-            "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
-            "Emerging issues committee Chief 2012 of the Engineering Student Center", 
             "Secretary of the ACM Student Chapter at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
+            
+            
+            "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
+            "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
+            "Emerging issues committee Chief 2012 of the Engineering Student Center", 
+            
             {
             
               "Languages": "I'm very interested in learning other languages. I speak english and french, and I want to learn German. In 2011 and studied it at my university."
             ,
-              "Knitting": "I chrochet scarves and beanis. I also make necklaces, bracelets and other accesories with macramé technique"
+              "Knitting": "I chrochet scarves and beanies. I also make necklaces, bracelets and other accesories with macramé technique"
             ,
               "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
             }
