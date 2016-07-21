@@ -45,3 +45,56 @@ svg{
 .nvd3 .nv-axis line {
 	stroke: transparent;
 }
+.tab-pane.active{
+	background-color: #2F2D42;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 20px;
+}
+.nav.nav-pills .active a{
+	background-color: #2F2D42;
+}
+
+.nav-pills>li.active>a{
+	background-color: #2F2D42;
+}
+.nav > li > a > img {
+  max-width: none;
+}
+.nav-pills {
+  border-bottom: 1px solid transparent;
+}
+.nav-pills > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-pills > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.nav-pills > li > a:hover {
+  border-color:   #CE2D59;
+  background-color:  #CE2D59;
+  color: #fedbb1;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #CE2D59;
+  background-color: #2F2D42;
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+svg text {
+    fill: #fedbb1;
+}
+div.container{
+	margin-top: 50px;
+}
+.tab-content > div {
+	height: 500px;
+}
