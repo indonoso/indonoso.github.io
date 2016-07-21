@@ -6,3 +6,35 @@ img.icon{
 	height: 10px;
 	width: auto;
 }
+.what{
+	margin-bottom: 0px;
+	margin-top: 2px;
+}
+
+.extra, .where{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p.dates, p.where{
+	font-size: 14px;
+}
+p.where{
+	font-style: italic;
+}
+p.dates{
+	margin-top: 1px;
+}
+p.dates, p.city{
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+p.city{
+	font-style: italic;
+}
+a.link{
+	text-decoration: none;
+
+}
+a.link:hover{
+	text-decoration: underline;
+}

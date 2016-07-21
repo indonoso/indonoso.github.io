@@ -100,9 +100,11 @@
         var left = document.createElement("div");
         left.setAttribute('class', 'col-md-2');
 
-        var dates = document.createElement("h4");
+        var dates = document.createElement("p");
         dates.appendChild(document.createTextNode(dates_))
-        var city = document.createElement("h5");
+        dates.setAttribute('class', 'dates')
+        var city = document.createElement("p");
+        city.setAttribute('class', 'city')
         city.appendChild(document.createTextNode(city_))
 
         left.appendChild(dates)
