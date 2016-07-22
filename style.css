@@ -1,155 +1,157 @@
-img.profile{
-	height: 180px;
-	width: auto;
+img.profile {
+    height: 180px;
+    width: auto;
 }
-img.icon{
-	height: 20px;
-	width: auto;
+img.icon {
+    height: 20px;
+    width: auto;
 }
-.glyphicon{
-	font-size: 20px;
+.glyphicon {
+    font-size: 20px;
 }
-.what{
-	margin-bottom: 0px;
-	margin-top: 2px;
+.what {
+    margin-bottom: 0px;
+    margin-top: 2px;
 }
-
-.extra, .where{
+.extra,
+.where {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-p.dates, p.where{
-	font-size: 14px;
+p.dates,
+p.where {
+    font-size: 1em;
 }
-p.where{
-	font-style: italic;
+p.where {
+    font-style: italic;
 }
-p.dates{
-	margin-top: 1px;
+p.dates {
+    margin-top: 1px;
 }
-p.dates, p.city{
-	font-size: 13px;
-	margin-bottom: 0px;
+p.dates,
+p.city {
+    font-size: 0.90em;
+    margin-bottom: 0px;
 }
-p.city{
-	font-style: italic;
+p.city {
+    font-style: italic;
 }
-a.link{
-	text-decoration: none;
-	color: #ff7fbf;
-
+a.link {
+    text-decoration: none;
+    color: #ff7fbf;
 }
-a.link:hover{
-	text-decoration: underline;
+a.link:hover {
+    text-decoration: underline;
 }
-svg{
-	height: 200px;
-	width: 200px;
+svg {
+    height: 200px;
+    width: 200px;
 }
-
 .nvd3 .nv-axis line {
-	stroke: transparent;
+    stroke: transparent;
 }
-div.container{
-	margin-top: 30px;
+div.container {
+    margin-top: 10px;
 }
 .tab-pane {
-	color: #FFFFFF;
-	padding: 20px;
-	min-height: 530px;
+    color: #FFFFFF;
+    padding: 20px;
+    min-height: 585px;
 }
-body{
-	color: #FFFFFF;
+body {
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
 }
-
 .nav-pills > li > a {
-  margin-right: 2px;
-  line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0; 
-  color: #FFF; 
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #FFF;
 }
-
 .nav-pills {
-  border-bottom: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #575656;
-  background-color: #E8E5D8;
-  border: 1px solid transparent;
-  border-bottom-color: transparent;
-  cursor: default;
+    color: #575656;
+    background-color: #E8E5D8;
+    border: 1px solid transparent;
+    border-bottom-color: transparent;
+    cursor: default;
 }
 .nav-pills > li > a:hover {
-  border-color:  transparent;
-  background-color: #E8E5D8;
-  color: #575656;
+    border-color: transparent;
+    background-color: #E8E5D8;
+    color: #575656;
 }
-
-
 svg text {
     fill: #FFF;
 }
 .row {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 #skills .row {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
-p.description{
-	font-size: 12px;
-
+p.description {
+    font-size: 0.9em;
+    font-family: 'Arima Madurai', cursive;
 }
-
 .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #D6D7D2;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+    display: block;
+    padding: 4px;
+    margin-bottom: 0px;
+    line-height: 1.42857143;
+    background-color: #D6D7D2;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
-.thumbnail a{
-	color: #7E2C80;
+.thumbnail a {
+    color: #7E2C80;
 }
 .thumbnail > img,
 .thumbnail a > img {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #7e2c80;
+    border-color: #7e2c80;
 }
 .thumbnail .caption {
-  padding: 9px;
-  color: #575656;
+    padding: 9px;
+    color: #575656;
 }
-.thumbnail a img{
-	margin-left: 0px;
+.thumbnail a img {
+    margin-left: 0px;
 }
-.caption h3{
-	padding: 0px;
-	margin-bottom: 10px;
-	margin-top: 0px;
-	font-size: 20px;
+.caption h3 {
+    padding: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 20px;
 }
-h4, h5{
-	font-weight: bold;
+h4,
+h5 {
+    font-weight: bold;
+    
+font-family: 'Lato', sans-serif;
 }
-h3{
-	color: #7E2C80;
-	font-weight: bold;
+h3 {
+    color: #7E2C80;
+    font-weight: bold;
+    
+font-family: 'Lato', sans-serif;
 }
-h4{
-	margin-top: 0px;
-	margin-bottom: 0px;
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+font-family: 'Lato', sans-serif;
 }
