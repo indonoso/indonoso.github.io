@@ -159,7 +159,7 @@ I’m currently working on my master’s thesis in Information Retrieval with <a
                 .x(function(d) { return d.label })
                 .y(function(d) { return d.value })
                 .barColor(colorbrewer.RdPu[7])
-                .margin({top: 30, left: 80})
+                .margin({left: 80, bottom: 10, top: 10})
                 .showYAxis(false)
                 .showValues(false)           //Show bar value next to each bar.
                 .duration(350)
@@ -554,8 +554,10 @@ I’m currently working on my master’s thesis in Information Retrieval with <a
               for  (var key in contentInfo){
                 var title = document.createElement("h5")
                 title.innerHTML = key
-                var ul = document.createElement("ul")
                 div.appendChild(title)
+                if (contentInfo[key].length > 0){
+                var ul = document.createElement("ul")
+                
                 for (var i = 0; i < contentInfo[key].length; i++){
                   var li = document.createElement("li")
                     li.innerHTML = contentInfo[key][i]
@@ -563,7 +565,7 @@ I’m currently working on my master’s thesis in Information Retrieval with <a
                 }
 
                 div.appendChild(ul)
-                
+                }
               }
             }            
          </script>
