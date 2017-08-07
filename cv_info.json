@@ -90,6 +90,26 @@
       "activities": "Estudio de un software colaborativo para niños de 6° básico",
       "bullet_points": []
     },
+
+    {
+      "dates": "Agosto 2015 - Julio 2014",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Ayudante de investigación del departamento Industrial y de Sistemas",
+      "activities": "",
+      "bullet_points": []
+    },
+
+    {
+      "dates": "Agosto 2015 - ",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Tesis de Magíster",
+      "activities": "Text Mining y Visualización aplicada a artículos científicos médicos",
+      "bullet_points": []
+    }
+  ],
+  "teaching_experience":[
     {
       "dates": "Marzo - Julio 2012",
       "where": "Pontificia Universidad Católica de Chile",
@@ -100,16 +120,7 @@
         "Programación Avanzada",
         "Introducción a la programación"
       ]
-    },
-    {
-      "dates": "Agosto 2015 - Julio 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Ayudante de investigación del departamento Industrial y de Sistemas",
-      "activities": "",
-      "bullet_points": []
-    },
-    {
+    },{
       "dates": "Marzo - Julio 2015",
       "where": "Pontificia Universidad Católica de Chile",
       "city": "Santiago, Chile",
@@ -132,14 +143,6 @@
         "Minería de Datos",
         "Sistemas Recomendadores"
       ]
-    },
-    {
-      "dates": "Agosto 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Tesis de Magíster",
-      "activities": "Text Mining y Visualización aplicada a artículos científicos médicos",
-      "bullet_points": []
     }
   ],
   "skills": {
@@ -317,19 +320,6 @@
   ],
   "working_experience": [
     {
-      "dates": "October 2012 - March 2014",
-      "where": "École Centrale de Lille",
-      "city": "Lille, France",
-      "what": "Activité Projet Centrale Lille",
-      "activities": "Creation of software to help the management of the paediatric area of CHR (Centre Hospitalier Régional Universitaire de Lille)",
-      "bullet_points": [
-        "Budget of 10 k€",
-        "team of 6 people",
-        {"In charge of":[
-        "Finding indicators of tension in a two-year data base of the hospital", "Creation of work plan"]}
-      ]
-    },
-    {
       "dates": "January 2013",
       "where": "Furet du Nord",
       "city": "Lille, France",
@@ -374,14 +364,16 @@
       "bullet_points": []
     },
     {
-      "dates": "March - July 2012",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
+      "dates": "October 2012 - March 2014",
+      "where": "École Centrale de Lille",
+      "city": "Lille, France",
+      "what": "Activité Projet Centrale Lille",
+      "activities": "Creation of software to help the management of the paediatric area of CHR (Centre Hospitalier Régional Universitaire de Lille)",
       "bullet_points": [
-        "Advanced Programming",
-        "Introduction to Programming"
+        "Budget of 10 k€",
+        "team of 6 people",
+        {"In charge of":[
+        "Finding indicators of tension in a two-year data base of the hospital", "Creation of work plan"]}
       ]
     },
     {
@@ -391,6 +383,28 @@
       "what": "Research Assitant at the Industrial and Systems Deparment",
       "activities": "",
       "bullet_points": []
+    },
+
+    {
+      "dates": "August 2015 - ",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Master's Thesis",
+      "activities": "Classification of medicine research articles with TextMining and visualization",
+      "bullet_points": []
+    }
+  ],
+  "teaching_experience":[
+    {
+      "dates": "March - July 2012",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Advanced Programming",
+        "Introduction to Programming"
+      ]
     },
     {
       "dates": "March - July 2015",
@@ -417,13 +431,37 @@
       ]
     },
     {
-      "dates": "Agosto 2015 - ",
+      "dates": "March 2016 - July 2016",
       "where": "Pontificia Universidad Católica de Chile",
       "city": "Santiago, Chile",
-      "what": "Master's Thesis",
-      "activities": "Classification of medicine research articles with TextMining and visualization",
-      "bullet_points": []
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Advanced Programming",
+        "Data Mining (Bussiness Inteligence course for professionals)"
+      ]
+    },{
+      "dates": "August 2016 - December 2016",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Teaching Asistant at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Data Mining (Bussiness Inteligence course for professionals)",
+        "Reccomender Systems"
+      ]
+    },
+    {
+      "dates": "August 2016 - December 2016",
+      "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+      "what": "Adjunct instructor at the Computer Science Deparment",
+      "activities": "",
+      "bullet_points": [
+        "Advanced Programming"
+      ]
     }
+
   ],
   "skills": {
     "Programming Languages": [
@@ -550,19 +588,35 @@
       ]
     }
   },
-  "interests": [
-    {
-      "Idiomas": "Me interesa aprender otros idiomas. Durante el año 2011 hice un año de Alemán"
-    },
-    {
-      "Tejer": "Tejo bufandas y gorros con crochet. También tejo collares, pulseras y accesorios con la técnica macramé"
-    },
-    {
-      "Diseño": "Me interesa el diseño de interfaces humano-computador."
-    },
-    {
-      "Viz": "Me gusta el área de visualización de la información y de su relación con Data Science"
-    }
-  ]
+  "other_activities": [
+    {"dates": "2012",
+    "where": "Engineering Student Center. Pontificia Universida Católica de Chile",
+      "city": "Santiago, Chile",
+    "what": "Emerging issues committee Chief" },
+    {"dates": "2013-2014",
+    "where": "Ecole Centrale de Lille",
+      "city": "Lille, France",
+    "what": "Elected member of the Student's Associations Administration Board" },
+    {"dates": "2013-2014",
+    "where": "ClubTIME: Top Industrial Managers for Europe",
+      "city": "Lille, France",
+    "what": "Communication Chief" },
+    {"dates": "2016",
+    "where": "Computer Science Deparment of Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+    "what": "Secretary of the ACM Student Chapter" },
+    {"dates": "June 2016",
+    "where": "Innovation Center Anacleto Angelini UC",
+      "city": "Santiago, Chile",
+    "what": "Participant in the Twitter Big Data Marathon" },
+    {"dates": "August 2016",
+    "where": "Pontificia Universidad Católica de Chile",
+      "city": "Santiago, Chile",
+    "what": "Member of the organization of DataScience Day" },
+    {"dates": "October 2016",
+    "where": "Google",
+      "city": "Houston, USA",
+    "what": "Selected by Google to receive their travel grant to attend Grace Hopper Celebration of Women in Computing 2016" }
+            ]
 }
 }

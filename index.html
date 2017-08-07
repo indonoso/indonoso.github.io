@@ -16,8 +16,8 @@
    </head>
    <body>
       <div class="container">
-         <div classs="row">
-            <div class="col-md-3">
+         <div classs="row" style= "margin:auto;">
+            <div class="col-md-4">
             <div class="thumbnail">
                <img src="perfil.jpg" alt="IvaniaDonoso" class="profile center-block">
                <div class="caption">
@@ -30,13 +30,16 @@
                <span> <img src="GitHub-Mark-32px.png" class="icon">   indonoso</span></a></p>
                <p class="description text-justify">
                  I am an Industrial Engineer graduate from the <a class="link" href="http://www.ing.uc.cl/">Pontificia Universidad Católica de Chile</a> with a specialization in Information Technology. I am also a graduate from <a class="link" href="http://www.ec-lille.fr/en/index.html">Ecole Centrale de Lille</a>, France, where I studied for two years. During the second semester of 2015 I participated in the program “Desafíos Sín Límites”, created by the Innovation Center Anacleto Angelini UC, for the company Accuhealth. 
-I am currently working on my master’s thesis in Information Retrieval with <a class="link" href="http://dparra.sitios.ing.uc.cl/">Denis Parra</a> and <a class="link" href="http://kpichara.ing.puc.cl/">Karim Pichara</a> with the support of the non profit organization <a class="link" href="http://www.epistemonikos.org/">Epistemonikos</a>. I am also a TA in Advance Programming and Recommender Systems.
+I am currently working on my master’s thesis in Information Retrieval with <a class="link" href="http://dparra.sitios.ing.uc.cl/">Denis Parra</a> with the support of the non profit organization <a class="link" href="http://www.epistemonikos.org/">Epistemonikos</a>. I teach <a class="link" href="https://github.com/IIC2233">advanced programming</a> at <a class="link" href="http://www.ing.uc.cl/">Pontificia Universidad Católica de Chile</a>.
 
                </p>
+               <p>You can download my CV here: </p>
+               <button class="btn" type="submit" onclick="window.open('CV - Ivania Donoso-Guzman.pdf')">English</button>
+               <button class="btn" type="submit" onclick="window.open('CV - Ivania Donoso Guzman.pdf')">Español</button>
                </div>
             </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
             <nav class="navbar navbar-default justified" role="navigation">
                <ul class="nav nav-pills justified">
                   <li role="presentation" class="active"><a href="#research" aria-controls="research" role="tab" data-toggle="tab">Research</a></li>
@@ -49,19 +52,20 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
                   <div role="tabpanel" class="tab-pane active" id="research"> </div>
                   <div role="tabpanel" class="tab-pane" id="skills">
                     <div class="row">
-                    <div class="col-md-6">
-                      <h4>Programming Languages</h4>
-                       <div id="chart_pl">
-                          <svg height="90" width="200"></svg>
-                       </div>
-                       </div>
-                       <div class="col-md-6">
-                       <h4>Data Bases</h4>
-                       <div id="chart_db">
-                          <svg height="90" width="200"></svg>
-                       </div></div>
-                    </div>
-                     <div class="row"><div class="col-md-12" id="languages">
+                    <div class="col-md-12" id="languages">
+                      <h4>Technical Skills</h4>
+                      <h5>Proficient</h5>
+                      <p><span class="label label-default">Python (Scientific Libraries)</span> 
+                      <span class="label label-default">MySQL</span> 
+<span class="label label-default">Postgresql</span> 
+<span class="label label-default">SQL</span> <span class="label label-default">CSS/HTML5</span> <span class="label label-default">Ubuntu</span></p>
+
+                      <h5>Intermediate</h5>
+                      <span class="label label-default">R</span> <span class="label label-default">JavaScript (D3.js)</span> <span class="label label-default">Java</span> 
+                      <h5>Basic</h5>
+                       <span class="label label-default">MongoDB</span>
+<span class="label label-default">C++</span> <span class="label label-default">CUDA-C</span>
+</br>
                      <h4> Languages </h4>
                      </div></div>
                   </div>
@@ -73,6 +77,15 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
             </div>
          </div>
          <script  type="text/javascript">
+         function setWindowHeight(){
+    var windowHeight = window.innerHeight;
+    document.getElementsByTagName('body')[0].style.height = windowHeight + "px";
+    console.log(document.body.style.height);
+//---------------------------------------´
+//will get the first element tagged body
+}
+window.addEventListener("resize",setWindowHeight,false);
+setWindowHeight();
             function loadDatesCity(dates_, city_) {
                 var left = document.createElement("div");
                 left.setAttribute('class', 'col-md-2');
@@ -145,52 +158,7 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
             
                 }
             }
-            function loadSkills(contentInfo, section, chart_id) {
-              var values = []
-              console.log(contentInfo[section])
-              for (var i = 0; i < contentInfo[section].length; i++) {
-                values.push({label: contentInfo[section][i]['name'], value: contentInfo[section][i]['expertise']})
-              }         
-                
-              //Each bar represents a single discrete quantity.
-              console.log(values)
-              
-              nv.addGraph(function() {
-              chart = nv.models.multiBarHorizontalChart()
-                .x(function(d) { return d.label })
-                .y(function(d) { return d.value })
-                .barColor(colorbrewer.RdPu[9])
-                .margin({left: 80, bottom: 10, top: 10})
-                .showYAxis(false)
-                .showValues(false)           //Show bar value next to each bar.
-                .duration(100)
-                .showLegend(false)
-                .showControls(false);        //Allow user to switch between "Grouped" and "Stacked" mode.
-              
-                //.tooltip.enabled(true)             //Show tooltips on hover.
-              
-              var aux = [
-                        {
-                            key: section,
-                            values:  values
-                        }
-                              ]
-              
-              d3.select(chart_id + ' svg')
-              .datum(aux)
-              .call(chart);
-              
-              nv.utils.windowResize(chart.update);
-              
-              return chart;
-              }, function() {
-                  chart.dispatch.on("renderEnd", function(e){
-                  var legends = document.querySelectorAll(".tick text")
-                  console.log(legends)
-                  console.log('render complete'); 
-                  })
-              
-              });}
+            
 
             
             function loadOther(div, contentInfo){
@@ -229,7 +197,7 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
             info = 
             {"education": [
             {
-              "dates": "March 2015 - ",
+              "dates": "July 2015 - ",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Master of Engineering Sciences, specialty in Computer Science",
@@ -261,6 +229,16 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
             ],
             "working": [
             {
+              "dates": "July 2016 to the present",
+              "where": "Pontificia Universidad Católica de Chile",
+              "city": "Santiago, Chile",
+              "what": "Adjunct instructor at the Computer Science Deparment",
+              "activities": "",
+              "bullet_points": [
+                "<a class=\"link\" href=\"https://github.com/IIC2233/syllabus\">Advanced Programming</a>"
+              ]
+            },
+            {
               "dates": "August - December 2016",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
@@ -275,7 +253,7 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
               "dates": "March - July 2016",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
-              "what": "Teaching Assistant at the Computer Science Deparment",
+              "what": "Teaching Assistant at the Computer Science Department",
               "activities": "",
               "bullet_points": [
                 "<a class=\"link\" href=\"https://github.com/IIC2233-2016-1/syllabus\">Advanced Programming (Chief of Assitantship area)</a>",
@@ -358,13 +336,14 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
             ],
             "research": [
              {
-              "dates": "August 2015 - ",
+              "dates": "July 2015 - ",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Master's Thesis",
-              "activities": "Classification of medicine research articles with Text Mining and Visualization",
+              "activities": " Document Filtering of medicine research articles using an Intelligent and Interactive User Interface for Epistemonikos.",
               "bullet_points": [
-              "Using data of <a class=\"link\" href=\"http://www.epistemonikos.org/\">Epistemonikos</a>"]
+              "Using data of <a class=\"link\" href=\"http://www.epistemonikos.org/\">Epistemonikos</a>",
+              " Partcipant of the Student Consortium in the <a class=\"link\" href=\"http://iui.acm.org/2017/\">intelligent user interfaces conference of 2017</a> in Cyprus. "]
             },
 
             {
@@ -448,7 +427,7 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
               },
               {
                 "name": "C#",
-                "expertise": 90,
+                "expertise": 40,
                 "library": [
                   {
                     "name": "ASP .NET",
@@ -458,19 +437,8 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
                 "color": '#fcc5c0'
               },
               {
-                "name": "Ruby",
-                "expertise": 60,
-                "color": '#fa9fb5',
-                "library": [
-                  {
-                    "name": "Rails",
-                    "expertise": 50
-                  }
-                ]
-              },
-              {
                 "name": "JavaScript",
-                "expertise": 40,
+                "expertise": 60,
                 "color": '#f768a1',
                 "library": [
                   {
@@ -509,11 +477,11 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
               },
               {
                 "name": "MongoDB",
-                "expertise": 70
+                "expertise": 50
               }
             ],
             "Software and OS":
-            ["Tableau", "Pycharm", "Ubuntu 14.04", "CentOS"],
+            ["Tableau", "Pycharm", "Ubuntu", "CentOS"],
             "languages": {
               "Spanish": ["Native"],
               "English": [
@@ -582,11 +550,6 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
                 var div = document.getElementById(key);
                 var contentInfo = info[key]
                 if (key == "skills"){
-                  var title = document.createElement("h4")
-                  loadSkills(contentInfo, "Programming Languages", "#chart_pl")
-                  var title = document.createElement("h4")
-                  
-                  loadSkills(contentInfo, "Data Bases", "#chart_db")
                   div = document.getElementById("languages")
                   loadLanguages(contentInfo['languages'], div)
                 }
