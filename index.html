@@ -29,7 +29,7 @@
                <a href="https://github.com/indonoso">
                <span> <img src="GitHub-Mark-32px.png" class="icon">   indonoso</span></a></p>
                <p class="description text-justify">
-                 I am an Industrial Engineer graduate from the <a class="link" href="http://www.ing.uc.cl/">Pontificia Universidad Católica de Chile</a> with a specialization in Information Technology. I am also a graduate from <a class="link" href="http://www.ec-lille.fr/en/index.html">Ecole Centrale de Lille</a>, France, where I studied for two years. During the second semester of 2015 I participated in the program “Desafíos Sín Límites”, created by the Innovation Center Anacleto Angelini UC, for the company Accuhealth. 
+                 I am an Industrial Engineer graduate from the <a class="link" href="http://www.ing.uc.cl/">Pontificia Universidad Católica de Chile</a> with a specialization in Information Technology. I am also a graduate from <a class="link" href="http://www.ec-lille.fr/en/index.html">Ecole Centrale de Lille</a>, France, where I studied for two years. During the second semester of 2015 I participated in the program “Desafíos Sín Límites”, created by the Innovation Center Anacleto Angelini UC, for the company Accuhealth.
 I am currently working on my master’s thesis in Information Retrieval with <a class="link" href="http://dparra.sitios.ing.uc.cl/">Denis Parra</a> with the support of the non profit organization <a class="link" href="http://www.epistemonikos.org/">Epistemonikos</a>. I teach <a class="link" href="https://github.com/IIC2233">advanced programming</a> at <a class="link" href="http://www.ing.uc.cl/">Pontificia Universidad Católica de Chile</a>.
 
                </p>
@@ -55,13 +55,13 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
                     <div class="col-md-12" id="languages">
                       <h4>Technical Skills</h4>
                       <h5>Proficient</h5>
-                      <p><span class="label label-default">Python (Scientific Libraries)</span> 
-                      <span class="label label-default">MySQL</span> 
-<span class="label label-default">Postgresql</span> 
+                      <p><span class="label label-default">Python (Scientific Libraries)</span>
+                      <span class="label label-default">MySQL</span>
+<span class="label label-default">Postgresql</span>
 <span class="label label-default">SQL</span> <span class="label label-default">CSS/HTML5</span> <span class="label label-default">Ubuntu</span></p>
 
                       <h5>Intermediate</h5>
-                      <span class="label label-default">R</span> <span class="label label-default">JavaScript (D3.js)</span> <span class="label label-default">Java</span> 
+                      <span class="label label-default">R</span> <span class="label label-default">JavaScript (D3.js)</span> <span class="label label-default">Java</span>
                       <h5>Basic</h5>
                        <span class="label label-default">MongoDB</span>
 <span class="label label-default">C++</span> <span class="label label-default">CUDA-C</span>
@@ -78,14 +78,12 @@ I am currently working on my master’s thesis in Information Retrieval with <a 
          </div>
          <script  type="text/javascript">
          function setWindowHeight(){
-    var windowHeight = window.innerHeight;
-    document.getElementsByTagName('body')[0].style.height = windowHeight + "px";
-    console.log(document.body.style.height);
-//---------------------------------------´
-//will get the first element tagged body
-}
-window.addEventListener("resize",setWindowHeight,false);
-setWindowHeight();
+            var windowHeight = window.innerHeight;
+            document.getElementsByTagName('body')[0].style.height = windowHeight + "px";
+            console.log(document.body.style.height);
+            }
+        window.addEventListener("resize",setWindowHeight,false);
+        setWindowHeight();
             function loadDatesCity(dates_, city_) {
                 var left = document.createElement("div");
                 left.setAttribute('class', 'col-md-2');
@@ -101,11 +99,11 @@ setWindowHeight();
             }
             function loadExperience(div, contentInfo, _type) {
                 for (var i = 0; i < contentInfo.length; i++) {
-            
+
                     var row = document.createElement("div");
                     row.setAttribute('class', 'row');
                     div.appendChild(row)
-            
+
                     // Fecha y ciudad
                     var left = loadDatesCity(contentInfo[i]['dates'], contentInfo[i]['city'])
                     var right = document.createElement("div");
@@ -119,7 +117,7 @@ setWindowHeight();
                         where.setAttribute('class', 'where')
                         where.innerHTML = contentInfo[i]['where']
                         var extra = document.createElement("p");
-                        extra.innerHTML = "<em>Relevant Classes</em>: " + contentInfo[i]['relevant_classes']
+                        extra.innerHTML = contentInfo[i]['relevant_classes']
                         right.appendChild(what)
                         right.appendChild(where)
                         right.appendChild(extra)
@@ -128,7 +126,7 @@ setWindowHeight();
                         what.setAttribute('class', 'what')
                         what.innerHTML = contentInfo[i]['what']
                         var where = document.createElement("p");
-                        where.setAttribute('class', 'where')            
+                        where.setAttribute('class', 'where')
                         where.innerHTML = contentInfo[i]['where']
                         right.appendChild(what)
                         right.appendChild(where)
@@ -137,9 +135,9 @@ setWindowHeight();
                           extra.innerHTML = contentInfo[i]['activities']
                           extra.setAttribute('class', 'extra')
                           right.appendChild(extra)
-                        }                
-                        
-                        
+                        }
+
+
                         if (contentInfo[i]['bullet_points'].length > 0) {
                             var bullet = document.createElement("ul")
                             for (var j = 0; j < contentInfo[i]['bullet_points'].length; j++) {
@@ -149,18 +147,18 @@ setWindowHeight();
                             }
                             right.appendChild(bullet)
                         }
-            
-            
+
+
                     }
-            
+
                     row.appendChild(left)
                     row.appendChild(right)
-            
+
                 }
             }
-            
 
-            
+
+
             function loadOther(div, contentInfo){
               var title = document.createElement("h4")
                 title.innerHTML = "Activities"
@@ -176,7 +174,7 @@ setWindowHeight();
               for (var i = 0; i < last_index; i++) {
               var li = document.createElement("li")
               li.innerHTML = contentInfo[i]
-              ul.appendChild(li)          
+              ul.appendChild(li)
               }
               content.appendChild(ul)
               var other_interests = document.createElement("h4")
@@ -191,41 +189,39 @@ setWindowHeight();
                 content.appendChild(explanation)
               }
             }
-             
-            
-            var chart;
-            info = 
+
+            info =
             {"education": [
             {
               "dates": "July 2015 - ",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Master of Engineering Sciences, specialty in Computer Science",
-              "relevant_classes": "Classification of medicine research articles with Text Mining techniques and Visualization"
+              "relevant_classes": "<em>Thesis</em>: Design and Evaluation of an Intelligent User Interface for Evidence Based Health-Care"
             },
             {
               "dates": "August 2014 - July 2015",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Industrial Engineering, Information Technology diploma",
-              "relevant_classes": "Data Mining","Technologies for Strategic Management, IT Project Management, IT Operations Management, Operations Management, Project Evaluation, Finance, Marketing"
+              "relevant_classes": "<em>Relevant Classes</em>: Data Mining, Technologies for Strategic Management, IT Project Management, IT Operations Management, Operations Management, Project Evaluation, Finance, Marketing"
             },
             {
               "dates": "September 2012 - June 2014",
               "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
               "city": "Lille, Francia",
               "what": "Generalist Engineering. Double Diploma Program",
-              "relevant_classes": "Complexity and Advanced Algorithms, Distributed Optimization and Multi-Agent Systems, Logic Programming"
+              "relevant_classes": "<em>Relevant Classes</em>: Complexity and Advanced Algorithms, Distributed Optimization and Multi-Agent Systems, Logic Programming"
             },
-            
+
             {
               "dates": "March 2010 - July 2014",
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Bachelor of Engineering",
-              "relevant_classes": "Advanced Programming, Optimization, Software Enginering, Databases, Computer Architecture, Discrete Mathematics"
-            }            
-            
+              "relevant_classes": "<em>Relevant Classes</em>: Advanced Programming, Optimization, Software Enginering, Databases, Computer Architecture, Discrete Mathematics"
+            }
+
             ],
             "working": [
             {
@@ -331,8 +327,8 @@ setWindowHeight();
                 "Advanced Programming",
                 "Introduction to Programming"
               ]
-            },        
-            
+            },
+
             ],
             "research": [
              {
@@ -340,7 +336,7 @@ setWindowHeight();
               "where": "Pontificia Universidad Católica de Chile",
               "city": "Santiago, Chile",
               "what": "Master's Thesis",
-              "activities": " Document Filtering of medicine research articles using an Intelligent and Interactive User Interface for Epistemonikos.",
+              "activities": "Design and Evaluation of an Intelligent User Interface for Evidence Based Health-Care",
               "bullet_points": [
               "Using data of <a class=\"link\" href=\"http://www.epistemonikos.org/\">Epistemonikos</a>",
               " Partcipant of the Student Consortium in the <a class=\"link\" href=\"http://iui.acm.org/2017/\">intelligent user interfaces conference of 2017</a> in Cyprus. "]
@@ -377,10 +373,10 @@ setWindowHeight();
               "activities": "Study of a collaborative software for 12 year old students",
               "bullet_points": []
             }
-           
-           
-            
-           
+
+
+
+
             ],
             "skills": {
             "Programming Languages": [
@@ -497,20 +493,20 @@ setWindowHeight();
                   "Diploma DALF C1 in 2014"
               ]
             }
-            
-            } 
+
+            }
             ,
             'other_activities': [
             "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Center Anacleto Angelini UC",
             "Secretary of the <a class=\"link\" href=\"https://www.facebook.com/acm.puc/?fref=ts\">ACM Student Chapter</a> at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
-            
-            
+
+
             "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
             "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
-            "Emerging issues committee Chief 2012 of the Engineering Student Center", 
-            
+            "Emerging issues committee Chief 2012 of the Engineering Student Center",
+
             {
-            
+
               "Languages": "I'm very interested in learning other languages. I speak English and French, and I want to learn German. In 2011 and studied it at my university."
             ,
               "Knitting": "I chrochet scarves and beanies. I also make necklaces, bracelets and other accesories with macramé technique"
@@ -526,7 +522,7 @@ setWindowHeight();
                 div.appendChild(title)
                 if (contentInfo[key].length > 0){
                 var ul = document.createElement("ul")
-                
+
                 for (var i = 0; i < contentInfo[key].length; i++){
                   var li = document.createElement("li")
                     li.innerHTML = contentInfo[key][i]
@@ -536,15 +532,14 @@ setWindowHeight();
                 div.appendChild(ul)
                 }
               }
-            }            
-         </script>
-         <script type="text/javascript">
+            }
+
             $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
               window.dispatchEvent(new Event('resize'));
             })
-            
+
             $('document').ready(function() {
-            
+                console.log(info)
               for (var key in info) {
                 var _type = key == "education" ? true : false
                 var div = document.getElementById(key);
@@ -558,11 +553,11 @@ setWindowHeight();
                 }
                 else if (key == "other_activities"){
                   loadOther(div, contentInfo)
-                  
+
                 }
               }
             })
-            
+
          </script>
       </div>
    </body>
