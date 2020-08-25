@@ -1,622 +1,447 @@
-{"es": {
-  "education": [
-    {
-      "dates": "Marzo 2010 - Julio 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Licenciada en Ciencias de la ingeniería",
-      "relevant_classes": "programación avanzada, optimización, ingeniería de software, bases de datos, arquitectura de computadores, matemáticas discretas"
-    },
-    {
-      "dates": "Sept. 2012 - Junio 2014",
-      "where": "École Centrale de Lille",
-      "city": "Lille, Francia",
-      "what": "Ingeniero Generalista. Programa de Doble Diploma",
-      "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
-    },
-    {
-      "dates": "Agosto. 2014 - Julio 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Ingeniería Industrial, diploma en Tecnologías de la Información",
-      "relevant_classes": "tecnologías para la gestión estratégica, gestión de proyectos TI, gestión de operaciones TI, gestión de operaciones, evaluación de proyectos, finanzas, marketing"
-    },
-    {
-      "dates": "Marzo. 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Magíster en Ciencias de la ingeniería, especialidad en Ciencias de la Computación",
-      "relevant_classes": "Clasificación de artículos de investigación médica con técnicas TextMining"
-    }
-  ],
-  "working_experience": [
-    {
-      "dates": "Octubre 2012 - Marzo 2014",
-      "where": "École Centrale de Lille",
-      "city": "Lille, Francia",
-      "what": "Activité Projet Centrale Lille",
-      "activities": "Creación de un sistema para organizar el área de urgencias pediatricas del CHR (Centre Hospitalier Régional Universitaire) de Lille",
-      "bullet_points": [
-        "Presupuesto de 10k€",
-        "Equipo de 6 persona",
-        "Encargada de:",
-        [
-          "armar el plan de trabajo",
-          "búsqueda de indicadores en base de datos"
-        ]
-      ]
-    },
-    {
-      "dates": "Enero 2013",
-      "where": "Furet du Nord",
-      "city": "Lille, Francia",
-      "what": "Práctica de Descubrimiento de la empresa",
-      "activities": "Servicio al cliente e inventario anual del sector de papelería",
-      "bullet_points": []
-    },
-    {
-      "dates": "Abril 2014 - Julio 2014",
-      "where": "Soft Solutions",
-      "city": "Lille, Francia",
-      "what": "Práctica Profesional",
-      "activities": "Desarrollo de tests sobre interfaces desarrolladas en PL/SQL Oracle g11",
-      "bullet_points": []
-    },
-    {
-      "dates": "Agosto 2015 - Diciembre 2015",
-      "where": "Accuehealth",
-      "city": "Santiago, Chile",
-      "what": "Participante del programa SinLímites del Centro de Innovación UC",
-      "activities": "Creación de un prototipo de modelo predictivo de salud para anticipar complicaciones de pacientes crónicos",
-      "bullet_points": [
-        "Aplicación de técnicas de data mining en una base de datos de salud"
-      ]
-    },
-    {
-      "dates": "Diciembre 2015",
-      "where": "Sonda",
-      "city": "Santiago, Chile",
-      "what": "Participante del programa de Asesorías del Centro de Innovación UC",
-      "activities": "Asesoría en proyectos de automatización e innovación",
-      "bullet_points": []
-    }
-  ],
-  "research_experience": [
-    {
-      "dates": "Agosto - Diciembre 2011",
-      "where": "Departamento de Ciencia de la Computación de la Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Proyecto de investigación en pregrado",
-      "activities": "Estudio de un software colaborativo para niños de 6° básico",
-      "bullet_points": []
-    },
-
-    {
-      "dates": "Agosto 2015 - Julio 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Ayudante de investigación del departamento Industrial y de Sistemas",
-      "activities": "",
-      "bullet_points": []
-    },
-
-    {
-      "dates": "Agosto 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Tesis de Magíster",
-      "activities": "Text Mining y Visualización aplicada a artículos científicos médicos",
-      "bullet_points": []
-    }
-  ],
-  "teaching_experience":[
-    {
-      "dates": "Marzo - Julio 2012",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Ayudante del departamento de Ciencia de la Computación",
-      "activities": "",
-      "bullet_points": [
-        "Programación Avanzada",
-        "Introducción a la programación"
-      ]
-    },{
-      "dates": "Marzo - Julio 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Ayudante del departamento de Ciencia de la Computación",
-      "activities": "",
-      "bullet_points": [
-        "Programación Avanzada",
-        "Minería de Datos (magíster de gestión de la información)",
-        "Minería de Datos (diplomado en inteligencia de negocios"
-      ]
-    },
-    {
-      "dates": "Agosto - Diciembre 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Ayudante del departamento de Ciencia de la Computación",
-      "activities": "",
-      "bullet_points": [
-        "Programación Avanzada",
-        "Minería de Datos",
-        "Sistemas Recomendadores"
-      ]
-    }
-  ],
-  "skills": {
-    "Programming Languages": [
+{
+  "en": {
+    "education": [
       {
-        "name": "Python",
-        "expertise": 100,
-        "library": [
-          {
-            "name": "numpy",
-            "expertise": 100
-          },
-          {
-            "name": "pandas",
-            "expertise": 100
-          },
-          {
-            "name": "scikit-learn",
-            "expertise": 100
-          },
-          {
-            "name": "scipy",
-            "expertise": 85
-          },
-          {
-            "name": "matplotlib",
-            "expertise": 85
-          },
-          {
-            "name": "beautifulSoup",
-            "y": 85
-          },
-          {
-            "name": "Django",
-            "expertise": 50
-          }
-        ]
+        "dates": "August 2020",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "PhD in Computer Science",
+        "bullet_points": [
+          "Recipient of ANID scholarship 2020"
+        ],
+        "relevant_classes": "<em>Thesis</em>: Design and Evaluation of an Intelligent User Interface for Evidence Based Health-Care"
       },
       {
-        "name": "Java",
-        "expertise": 95,
-        "library": ""
+        "dates": "July 2015 - August 2017",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Master of Engineering Sciences, specialty in Computer Science",
+        "relevant_classes": "<em>Thesis</em>: Design and Evaluation of an Intelligent User Interface for Evidence Based Health-Care"
       },
       {
-        "name": "C#",
-        "expertise": 90,
-        "library": [
-          {
-            "name": "ASP .NET",
-            "expertise": 20
-          }
-        ]
+        "dates": "August 2014 - July 2015",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Industrial Engineering, Information Technology diploma",
+        "relevant_classes": "<em>Relevant Classes</em>: Data Mining, Technologies for Strategic Management, IT Project Management, IT Operations Management, Operations Management, Project Evaluation, Finance, Marketing"
       },
       {
-        "name": "Ruby",
-        "expertise": 60,
-        "library": [
-          {
-            "name": "Rails",
-            "expertise": 50
-          }
-        ]
+        "dates": "September 2012 - June 2014",
+        "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
+        "city": "Lille, Francia",
+        "what": "Generalist Engineering. Double Diploma Program",
+        "relevant_classes": "<em>Relevant Classes</em>: Complexity and Advanced Algorithms, Distributed Optimization and Multi-Agent Systems, Logic Programming"
       },
       {
-        "name": "JavaScript",
-        "expertise": 40,
-        "library": [
-          {
-            "name": "d3",
-            "expertise": 40
-          }
-        ]
-      },
-      {
-        "name": "PHP",
-        "expertise": 40,
-        "library": ""
-      },
-      {
-        "name": "C",
-        "expertise": 20,
-        "library": ""
-      },
-      {
-        "name": "C-Cuda",
-        "expertise": 20,
-        "library": ""
+        "dates": "March 2010 - July 2014",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Bachelor of Engineering",
+        "relevant_classes": "<em>Relevant Classes</em>: Advanced Programming, Optimization, Software Enginering, Databases, Computer Architecture, Discrete Mathematics"
       }
     ],
-    "Data Bases": [
+    "working": [
       {
-        "name": "MySQL",
-        "expertise": 95
-      },
-      {
-        "name": "postgreSQL",
-        "expertise": 95
-      },
-      {
-        "name": "Oracle",
-        "expertise": 95
-      },
-      {
-        "name": "PLSQL",
-        "expertise": 90
-      }
-    ]
-  },
-  "oskills": {
-    "languages": {
-      "Español": "Nativo",
-      "Inglés": [
-        "Avanzado",
-        [
-          "1 año de intercambio en Nueva Zelanda",
-          "TOEIC 2014: 965",
-          "TOEIC 2010: 915"
-        ]
-      ],
-      "Francés": [
-        "Avanzado",
-        [
-          "2 años Ecole Centrale de Lille",
-          "DALF C1 obtenido en 2014"
-        ]
-      ]
-    }
-  },
-  "interests": [
-    {
-      "Idiomas": "Me interesa aprender otros idiomas. Durante el año 2011 hice un año de Alemán"
-    },
-    {
-      "Tejer": "Tejo bufandas y gorros con crochet. También tejo collares, pulseras y accesorios con la técnica macramé"
-    },
-    {
-      "Diseño": "Me interesa el diseño de interfaces humano-computador."
-    },
-    {
-      "Viz": "Me gusta el área de visualización de la información y de su relación con Data Science"
-    }
-  ]
-}
-,
-"en":
-{"education": [
-    {
-      "dates": "March 2010 - July 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Bachelor of Engineering",
-      "relevant_classes": "advanced programming, optimization, software enginering, databases,  computer architecture, discrete mathematics"
-    },
-    {
-      "dates": "September 2012 - June 2014",
-      "where": "École Centrale de Lille",
-      "city": "Lille, Francia",
-      "what": "Generalist Engineering. Double Diplome Program",
-      "relevant_classes": "complexity and advanced algorithms, distributed optimisation and multi-agent systems, logic programming"
-    },
-    {
-      "dates": "August 2014 - July 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Industrial Engineering, Information Technology diploma",
-      "relevant_classes": "Technologies for strategic management, TI project management, TI operations management, operations management, project evaluation, finance, marketing"
-    },
-    {
-      "dates": "March 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Master of Engineering Science, Computer Science specialty",
-      "relevant_classes": "Classification of medicine research articles with TextMining and visualization"
-    }
-  ],
-  "working_experience": [
-    {
-      "dates": "January 2013",
-      "where": "Furet du Nord",
-      "city": "Lille, France",
-      "what": "\"Discover the company\" Internship",
-      "activities": "Preparation of annual inventory and costumer information",
-      "bullet_points": []
-    },
-    {
-      "dates": "April 2014 - July 2014",
-      "where": "Soft Solutions",
-      "city": "Lille, Francia",
-      "what": "Professional Internship",
-      "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
-      "bullet_points": []
-    },
-    {
-      "dates": "August 2015 - December 2015",
-      "where": "Accuehealth",
-      "city": "Santiago, Chile",
-      "what": "Participant in the programa SinLímites of the center of innovation Anacleto Angelini UC",
-      "activities": "Creationn of a prototype of a predictive model to anticipe complications of chronic patients",
-      "bullet_points": [
-        "Aplication of data mining and machine learning with health records"
-      ]
-    },
-    {
-      "dates": "December 2015",
-      "where": "Sonda",
-      "city": "Santiago, Chile",
-      "what": "Sonda Consultant for the consultancy program of the center of innovation Anacleto Angelini UC",
-      "activities": "Automatization and innovation consultant",
-      "bullet_points": []
-    }
-  ],
-  "research_experience": [
-    {
-      "dates": "August - December 2011",
-      "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Undergraduate research",
-      "activities": "Study of a collaborative software for 12 years old students",
-      "bullet_points": []
-    },
-    {
-      "dates": "October 2012 - March 2014",
-      "where": "École Centrale de Lille",
-      "city": "Lille, France",
-      "what": "Activité Projet Centrale Lille",
-      "activities": "Creation of software to help the management of the paediatric area of CHR (Centre Hospitalier Régional Universitaire de Lille)",
-      "bullet_points": [
-        "Budget of 10 k€",
-        "team of 6 people",
-        {"In charge of":[
-        "Finding indicators of tension in a two-year data base of the hospital", "Creation of work plan"]}
-      ]
-    },
-    {
-      "dates": "August 2015 - July 2014",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Research Assitant at the Industrial and Systems Deparment",
-      "activities": "",
-      "bullet_points": []
-    },
-
-    {
-      "dates": "August 2015 - ",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Master's Thesis",
-      "activities": "Classification of medicine research articles with TextMining and visualization",
-      "bullet_points": []
-    }
-  ],
-  "teaching_experience":[
-    {
-      "dates": "March - July 2012",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Advanced Programming",
-        "Introduction to Programming"
-      ]
-    },
-    {
-      "dates": "March - July 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Advanced Programming",
-        "Data Mining (Master of information management)",
-        "Data Mining (Bussiness Inteligence course for professionals"
-      ]
-    },
-    {
-      "dates": "August - December 2015",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Advanced Programming",
-        "Data Mining",
-        "Recommender Systems"
-      ]
-    },
-    {
-      "dates": "March 2016 - July 2016",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Advanced Programming",
-        "Data Mining (Bussiness Inteligence course for professionals)"
-      ]
-    },{
-      "dates": "August 2016 - December 2016",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Teaching Asistant at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Data Mining (Bussiness Inteligence course for professionals)",
-        "Reccomender Systems"
-      ]
-    },
-    {
-      "dates": "August 2016 - December 2016",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Adjunct instructor at the Computer Science Deparment",
-      "activities": "",
-      "bullet_points": [
-        "Advanced Programming"
-      ]
-    }
-
-  ],
-  "skills": {
-    "Programming Languages": [
-      {
-        "name": "Python",
-        "expertise": 100,
-        "library": [
-          {
-            "name": "numpy",
-            "expertise": 100
-          },
-          {
-            "name": "pandas",
-            "expertise": 100
-          },
-          {
-            "name": "scikit-learn",
-            "expertise": 100
-          },
-          {
-            "name": "scipy",
-            "expertise": 85
-          },
-          {
-            "name": "matplotlib",
-            "expertise": 85
-          },
-          {
-            "name": "beautifulSoup",
-            "y": 85
-          },
-          {
-            "name": "Django",
-            "expertise": 50
-          }
+        "dates": "August 2018 - March 2020",
+        "where": "<a class=\"link\" href=\"https://www.conversica.com/\">Conversica</a>",
+        "city": "Santiago, Chile",
+        "what": "Data Scientist",
+        "activities": "I worked as a data scientist Research and Development team in Santiago",
+        "bullet_points": [
+          "Developed a prototype question answering system for USA Human Resources related questions",
+          "Developed a set of metrics and alerts to keep track of models that were in production",
+          "Developed a plan to increase automation rate for all models in production"
         ]
       },
       {
-        "name": "Java",
-        "expertise": 85,
-        "library": ""
+        "dates": "September 2017 - August 2018",
+        "where": "<a class=\"link\" href=\"https://www.unholster.com/\" >Unholster</a>",
+        "city": "Santiago, Chile",
+        "what": "Software Engineer and Data Scientist",
+        "activities": "Full-Stack developer using django. Data analysis and visualizations of several projects",
+        "bullet_points": {
+          "Created visualizations for <a class=\"link\" href=\"https://www.decidechile.cl\">Decide Chile</a>": [
+            "Real-time visualization of 2017 Chilean election results",
+            "400% increase in total users compared to previous version of the site. 7 week time to market. 18K unique users",
+            "Data analysis published on <a class=\"link\" href=\"https://latercera.com\">La Tercera</a> journal, and <a class=\"link\" href=\"https://labot.cl\">labot.cl</a> a Telegram bot"
+          ],
+          "Created search system of multiple media types (scanned documents, audio files, etc.) using Google Vision, Google Translate and IBM Watson APIs.": [
+            "We used different APIs to index the content of the evidence and design a search interface",
+            "Time to market was 7 weeks"
+          ]
+        }
       },
       {
-        "name": "C#",
-        "expertise": 90,
-        "library": [
-          {
-            "name": "ASP .NET",
-            "expertise": 10
-          }
+        "dates": "August 2015 - December 2015",
+        "where": "<a class=\"link\" href=\"https://www.accuhealth.cl/\" >Accuehealth</a>",
+        "city": "Santiago, Chile",
+        "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">program \"Desafíos Sin Límites\"</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
+        "activities": "Creation of a prototype of a predictive model to anticipate complications of chronic patients",
+        "bullet_points": [
+          "Application of data mining and machine learning technique to health records",
+          "Results in the areas of operations management and patient's health"
         ]
       },
       {
-        "name": "Ruby",
-        "expertise": 60,
-        "library": [
-          {
-            "name": "Rails",
-            "expertise": 50
-          }
-        ]
+        "dates": "April 2014 - July 2014",
+        "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
+        "city": "Lille, Francia",
+        "what": "Professional Internship",
+        "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
+        "bullet_points": []
       },
       {
-        "name": "JavaScript",
-        "expertise": 40,
-        "library": [
-          {
-            "name": "d3",
-            "expertise": 70
-          }
-        ]
-      },
-      {
-        "name": "C",
-        "expertise": 20,
-        "library": ""
-      },
-      {
-        "name": "C-Cuda",
-        "expertise": 10,
-        "library": ""
+        "dates": "January 2013",
+        "where": "Furet du Nord",
+        "city": "Lille, France",
+        "what": "\"Discover the company\" Internship",
+        "activities": "Preparation of annual inventory and costumer service",
+        "bullet_points": []
       }
     ],
-    "Data Bases": [
+    "teaching": [
+      \cvevent{Instructor of the course \textit{Information Visualization}}{Computer Science Department, PUC}{Nov. 2017 -- Dec. 2018 }{Santiago, Chile}
+Class of the \textit{Big Data Diploma}.
+
+\divider
+
+\cvevent{Instructor of the course \textit{Data Analysis}}{Data Science Institute, Universidad del Desarrollo}{Aug. 2018 -- Nov. 2018}{Santiago, Chile}
+Class of the \textit{Data Science Diploma} and {Master in data science}.
+
+\divider
+
+\cvevent{Adjunct instructor of the course \textit{Advanced Programming}}{Computer Science Department, PUC}{Aug. 2016 -- Dec. 2017 }{Santiago, Chile}
+
+\divider
+
+\cvevent{Teaching Assistant}{Computer Science Department, PUC}{2015 -- 2016}{Santiago, Chile}
+\textbf{Courses}: Recommender Systems, Data Mining, Advanced Programming.
+
+
       {
-        "name": "MySQL",
-        "expertise": 90
+        "dates": "July 2016 to the present",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Adjunct instructor at the Computer Science Deparment",
+        "activities": "",
+        "bullet_points": [
+          "<a class=\"link\" href=\"https://github.com/IIC2233/syllabus\">Advanced Programming</a>"
+        ]
       },
       {
-        "name": "postgreSQL",
-        "expertise": 90
+        "dates": "August - December 2016",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Teaching Assistant at the Computer Science Deparment",
+        "activities": "",
+        "bullet_points": [
+          "<a class=\"link\" href=\"https://github.com/IIC2233-2016-02/syllabus\">Advanced Programming</a>",
+          "Recommender Systems"
+        ]
       },
       {
-        "name": "Oracle",
-        "expertise": 90
+        "dates": "March - July 2016",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Teaching Assistant at the Computer Science Department",
+        "activities": "",
+        "bullet_points": [
+          "<a class=\"link\" href=\"https://github.com/IIC2233-2016-1/syllabus\">Advanced Programming (Chief of Assitantship area)</a>",
+          "Data Mining (Bussiness Inteligence course for professionals)"
+        ]
       },
       {
-        "name": "PLSQL",
-        "expertise": 90
+        "dates": "December 2015",
+        "where": "Sonda and Innovation Center Anacleto Angelini UC",
+        "city": "Santiago, Chile",
+        "what": "Sonda Consultant for the consultancy program of the Innovation Center Anacleto Angelini UC",
+        "activities": "Automatization and innovation consultant",
+        "bullet_points": []
       },
       {
-        "name": "Mongo",
-        "expertise": 70
+        "dates": "August 2015 - December 2015",
+        "where": "<a class=\"link\" href=\"https://www.accuhealth.cl/\" >Accuehealth</a>",
+        "city": "Santiago, Chile",
+        "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">program \"Desafíos Sin Límites\"</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
+        "activities": "Creation of a prototype of a predictive model to anticipate complications of chronic patients",
+        "bullet_points": [
+          "Application of data mining and machine learning technique to health records",
+          "Results in the areas of operations management and patient's health"
+        ]
+      },
+      {
+        "dates": "August - December 2015",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Teaching Assistant at the Computer Science Deparment",
+        "activities": "",
+        "bullet_points": [
+          "<a class=\"link\" href=\"https://github.com/IIC2233-2015-2/syllabus\">Advanced Programming</a>",
+          "Data Mining",
+          "<a class=\"link\" href=\"http://dparra.sitios.ing.uc.cl/classes/recsys-2015-2/\">Recommender Systems</a>"
+        ]
+      },
+      {
+        "dates": "March - July 2015",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Teaching Assistant at the Computer Science Deparment",
+        "activities": "",
+        "bullet_points": [
+          "<a class=\"link\" href=\"https://github.com/IIC2233-2015-1/syllabus\">Advanced Programming</a>",
+          "Data Mining (Master of information management)",
+          "Data Mining (Bussiness Inteligence course for professionals)"
+        ]
+      },
+      {
+        "dates": "April 2014 - July 2014",
+        "where": "<a class=\"link\" href=\"http://www.ibs-softsolutions.com/\">Soft Solutions</a>",
+        "city": "Lille, Francia",
+        "what": "Professional Internship",
+        "activities": "DataBases Testing with PL/SQL in an Oracle g11 data base",
+        "bullet_points": []
+      },
+      {
+        "dates": "January 2013",
+        "where": "Furet du Nord",
+        "city": "Lille, France",
+        "what": "\"Discover the company\" Internship",
+        "activities": "Preparation of annual inventory and costumer service",
+        "bullet_points": []
+      },
+      {
+        "dates": "March - July 2012",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Teaching Assistant at the Computer Science Deparment",
+        "activities": "",
+        "bullet_points": [
+          "Advanced Programming",
+          "Introduction to Programming"
+        ]
       }
-    ]
-  },
-  "oskills": {
-    "languages": {
-      "Spanish": "Native",
-      "English": [
-        "Advanced",
-        [
-          "One year as a exchange student in New Zealand (Cashmere High School, Christchurch)",
+    ],
+    "research": [
+      {
+        "dates": "July 2015 - ",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Master's Thesis",
+        "activities": "Design and Evaluation of an Intelligent User Interface for Evidence Based Health-Care",
+        "bullet_points": [
+          "Using data of <a class=\"link\" href=\"http://www.epistemonikos.org/\">Epistemonikos</a>",
+          " Partcipant of the Student Consortium in the <a class=\"link\" href=\"http://iui.acm.org/2017/\">intelligent user interfaces conference of 2017</a> in Cyprus. "
+        ]
+      },
+      {
+        "dates": "August 2014 - July 2015",
+        "where": "Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Research Assistant at the Industrial and Systems Deparment",
+        "activities": "Process Modeling at Hospital Salvador",
+        "bullet_points": [
+          "<a class=\"link\" href=\"https://www.ing.uc.cl/salud-mas-ingenieria-mas-salud-para-la-gente/\">School Article</a>"
+        ]
+      },
+      {
+        "dates": "October 2012 - March 2014",
+        "where": "<a class=\"link\" href=\"http://centrale.ec-lille.fr/en/your-course/study-projects.html\">Ecole Centrale de Lille",
+        "city": "Lille, France",
+        "what": "Activité Projet Centrale Lille",
+        "activities": "Creation of software to help the management of the paediatric area of CHRU Lille (Centre Hospitalier Régional Universitaire de Lille)",
+        "bullet_points": [
+          "Budget of €10k given by French National Research Agency (ANR)",
+          "In charge of finding indicators of tension in a two-year data base of the hospital",
+          "<a class=\"link\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/25160202\">Related paper</a>"
+        ]
+      },
+      {
+        "dates": "August - December 2011",
+        "where": "Computer Science Department, Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Undergraduate research",
+        "activities": "Study of a collaborative software for 12 year old students",
+        "bullet_points": []
+      }
+    ],
+    "skills": {
+      "Programming Languages": [
+        {
+          "name": "Python",
+          "expertise": 100,
+          "color": '#fff7f3',
+          "library": [
+            {
+              "name": "numpy",
+              "expertise": 100
+            },
+            {
+              "name": "pandas",
+              "expertise": 100
+            },
+            {
+              "name": "scikit-learn",
+              "expertise": 100
+            },
+            {
+              "name": "scipy",
+              "expertise": 90
+            },
+            {
+              "name": "matplotlib",
+              "expertise": 85
+            },
+            {
+              "name": "beautifulSoup",
+              "y": 85
+            },
+            {
+              "name": "Django",
+              "expertise": 50
+            }
+          ]
+        },
+        {
+          "name": "Java",
+          "expertise": 85,
+          "library": "",
+          "color": '#fde0dd'
+        },
+        {
+          "name": "C#",
+          "expertise": 40,
+          "library": [
+            {
+              "name": "ASP .NET",
+              "expertise": 10
+            }
+          ],
+          "color": '#fcc5c0'
+        },
+        {
+          "name": "JavaScript",
+          "expertise": 60,
+          "color": '#f768a1',
+          "library": [
+            {
+              "name": "d3",
+              "expertise": 70
+            }
+          ]
+        },
+        {
+          "name": "C",
+          "expertise": 20,
+          "library": ""
+        },
+        {
+          "name": "Cuda-C",
+          "expertise": 10,
+          "library": ""
+        }
+      ],
+      "Data Bases": [
+        {
+          "name": "MySQL",
+          "expertise": 90
+        },
+        {
+          "name": "PostgreSQL",
+          "expertise": 90
+        },
+        {
+          "name": "Oracle",
+          "expertise": 90
+        },
+        {
+          "name": "PLSQL",
+          "expertise": 90
+        },
+        {
+          "name": "MongoDB",
+          "expertise": 50
+        }
+      ],
+      "Software and OS": [
+        "Tableau",
+        "Pycharm",
+        "Ubuntu",
+        "CentOS"
+      ],
+      "languages": {
+        "Spanish": [
+          "Native"
+        ],
+        "English": [
+          "Proficient",
+          "One year as an exchange student in New Zealand (Cashmere High School, Christchurch)",
           "TOEIC 2014: 965",
           "TOEIC 2010: 915"
-        ]
-      ],
-      "French": [
-        "Avanzado",
-        [
-          "Two years as a student at Ecole Centrale de Lille",
+        ],
+        "French": [
+          "Proficient",
+          "Five weeks of study at <a class=\"link\" href=\"http://www.cavilam.com/\">CAVILAM</a> in Vichy, France",
+          "Two years as a student at <a class=\"link\" href=\"http://centrale.ec-lille.fr/en/international/international-students.html\">Ecole Centrale de Lille</a>",
           "Diploma DALF C1 in 2014"
         ]
-      ]
-    }
+      }
+    },
+    'other_activities': [
+      "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Center Anacleto Angelini UC",
+      "Secretary of the <a class=\"link\" href=\"https://www.facebook.com/acm.puc/?fref=ts\">ACM Student Chapter</a> at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
+      "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
+      "Elected member of the <a class=\"link\" href=\"https://sites.google.com/site/caelevescentralelille/home\">Student's Associations Administration Board</a> 2013-2014 at Ecole Centrale de Lille",
+      "Emerging issues committee Chief 2012 of the Engineering Student Center",
+      {
+        "Languages": "I'm very interested in learning other languages. I speak English and French, and I want to learn German. In 2011 and studied it at my university.",
+        "Knitting": "I chrochet scarves and beanies. I also make necklaces, bracelets and other accesories with macramé technique",
+        "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
+      }
+    ]
   },
   "other_activities": [
-    {"dates": "2012",
-    "where": "Engineering Student Center. Pontificia Universida Católica de Chile",
+    {
+      "dates": "2012",
+      "where": "Engineering Student Center. Pontificia Universida Católica de Chile",
       "city": "Santiago, Chile",
-    "what": "Emerging issues committee Chief" },
-    {"dates": "2013-2014",
-    "where": "Ecole Centrale de Lille",
+      "what": "Emerging issues committee Chief"
+    },
+    {
+      "dates": "2013-2014",
+      "where": "Ecole Centrale de Lille",
       "city": "Lille, France",
-    "what": "Elected member of the Student's Associations Administration Board" },
-    {"dates": "2013-2014",
-    "where": "ClubTIME: Top Industrial Managers for Europe",
+      "what": "Elected member of the Student's Associations Administration Board"
+    },
+    {
+      "dates": "2013-2014",
+      "where": "ClubTIME: Top Industrial Managers for Europe",
       "city": "Lille, France",
-    "what": "Communication Chief" },
-    {"dates": "2016",
-    "where": "Computer Science Deparment of Pontificia Universidad Católica de Chile",
+      "what": "Communication Chief"
+    },
+    {
+      "dates": "2016",
+      "where": "Computer Science Deparment of Pontificia Universidad Católica de Chile",
       "city": "Santiago, Chile",
-    "what": "Secretary of the ACM Student Chapter" },
-    {"dates": "June 2016",
-    "where": "Innovation Center Anacleto Angelini UC",
+      "what": "Secretary of the ACM Student Chapter"
+    },
+    {
+      "dates": "June 2016",
+      "where": "Innovation Center Anacleto Angelini UC",
       "city": "Santiago, Chile",
-    "what": "Participant in the Twitter Big Data Marathon" },
-    {"dates": "August 2016",
-    "where": "Pontificia Universidad Católica de Chile",
+      "what": "Participant in the Twitter Big Data Marathon"
+    },
+    {
+      "dates": "August 2016",
+      "where": "Pontificia Universidad Católica de Chile",
       "city": "Santiago, Chile",
-    "what": "Member of the organization of DataScience Day" },
-    {"dates": "October 2016",
-    "where": "Google",
+      "what": "Member of the organization of DataScience Day"
+    },
+    {
+      "dates": "October 2016",
+      "where": "Google",
       "city": "Houston, USA",
-    "what": "Selected by Google to receive their travel grant to attend Grace Hopper Celebration of Women in Computing 2016" }
-            ]
+      "what": "Selected by Google to receive their travel grant to attend Grace Hopper Celebration of Women in Computing 2016"
+    }
+  ]
 }
 }
