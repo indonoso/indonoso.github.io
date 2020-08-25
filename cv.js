@@ -1,4 +1,4 @@
-{
+var info = {
   "en": {
     "education": [
       {
@@ -10,7 +10,7 @@
         "bullet_points": [
           "Recipient of ANID scholarship 2020"
         ],
-        "relevant_classes": "Recommender Systems, Bio Statistics, Structural Equation Modelling"
+        "relevant_classes": "<em>Relevant Classes</em>: Recommender Systems, Bio Statistics, Structural Equation Modelling"
       },
       {
         "dates": "July 2015 - August 2017",
@@ -30,7 +30,7 @@
         "dates": "September 2012 - June 2014",
         "where": "<a class=\"link\" href=\"http://www.ec-lille.fr/en/index.html\">Ecole Centrale de Lille",
         "city": "Lille, Francia",
-        "what": "Ingénieur diplômé de la Ecole Central de Lille. Double Diploma Program",
+        "what": "Generalist Engineering. Double Diploma Program",
         "relevant_classes": "<em>Relevant Classes</em>: Complexity and Advanced Algorithms, Distributed Optimization and Multi-Agent Systems, Logic Programming"
       },
       {

@@ -128,32 +128,12 @@ function loadLanguages(contentInfo, div) {
     }
 }
 
-function readTextFile(file) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, true);
-    rawFile.setRequestHeader('Access-Control-Allow-Origin', '*')
-    rawFile.setRequestHeader('X-PINGOTHER', 'pingpong');
-
-
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                info = rawFile.responseText;
-                loadData()
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
 function loadData(){
-     for (var key in info) {
-        var _type = key == "education" ? true : false
-        var div = document.getElementById(key);
-        var contentInfo = info[key]
+    let current_info = info['en']
+     for (let key in current_info) {
+        let _type = key == "education" ? true : false
+        let div = document.getElementById(key);
+        let contentInfo = current_info[key]
         if (key == "skills") {
             div = document.getElementById("languages")
             loadLanguages(contentInfo['languages'], div)
@@ -169,9 +149,8 @@ function loadData(){
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     window.dispatchEvent(new Event('resize'));
 })
-var info = ""
-$('document').ready(function () {
-    readTextFile('https://storage.googleapis.com/ivania/cv_info.json')
 
+$('document').ready(function () {
+    loadData()
 
 })
