@@ -6,10 +6,11 @@
         "where": "Pontificia Universidad Católica de Chile",
         "city": "Santiago, Chile",
         "what": "PhD in Computer Science",
+        "activities": "I'm working on evaluation of Intelligent User Interfaces",
         "bullet_points": [
           "Recipient of ANID scholarship 2020"
         ],
-        "relevant_classes": "<em>Thesis</em>: Design and Evaluation of an Intelligent User Interface for Evidence Based Health-Care"
+        "relevant_classes": "Recommender Systems, Bio Statistics, Structural Equation Modelling"
       },
       {
         "dates": "July 2015 - August 2017",
@@ -55,7 +56,7 @@
       },
       {
         "dates": "September 2017 - August 2018",
-        "where": "<a class=\"link\" href=\"https://www.unholster.com/\" >Unholster</a>",
+        "where": "<a class=\"link\" href=\"https://www.unholster.com/\">Unholster</a>",
         "city": "Santiago, Chile",
         "what": "Software Engineer and Data Scientist",
         "activities": "Full-Stack developer using django. Data analysis and visualizations of several projects",
@@ -100,32 +101,34 @@
       }
     ],
     "teaching": [
-      \cvevent{Instructor of the course \textit{Information Visualization}}{Computer Science Department, PUC}{Nov. 2017 -- Dec. 2018 }{Santiago, Chile}
-Class of the \textit{Big Data Diploma}.
-
-\divider
-
-\cvevent{Instructor of the course \textit{Data Analysis}}{Data Science Institute, Universidad del Desarrollo}{Aug. 2018 -- Nov. 2018}{Santiago, Chile}
-Class of the \textit{Data Science Diploma} and {Master in data science}.
-
-\divider
-
-\cvevent{Adjunct instructor of the course \textit{Advanced Programming}}{Computer Science Department, PUC}{Aug. 2016 -- Dec. 2017 }{Santiago, Chile}
-
-\divider
-
-\cvevent{Teaching Assistant}{Computer Science Department, PUC}{2015 -- 2016}{Santiago, Chile}
-\textbf{Courses}: Recommender Systems, Data Mining, Advanced Programming.
-
-
       {
-        "dates": "July 2016 to the present",
+        "dates": "November 2017 to December 2018",
         "where": "Pontificia Universidad Católica de Chile",
         "city": "Santiago, Chile",
-        "what": "Adjunct instructor at the Computer Science Deparment",
-        "activities": "",
+        "what": "Instructor of the course Information Visualization",
+        "activities": "Class of the Big Data Diploma",
         "bullet_points": [
-          "<a class=\"link\" href=\"https://github.com/IIC2233/syllabus\">Advanced Programming</a>"
+
+        ]
+      },
+      {
+        "dates": "August 2018 to November 2018",
+        "where": "Data Science Institute, Universidad del Desarroll",
+        "city": "Santiago, Chile",
+        "what": "Instructor of the course Data Analysis",
+        "activities": "Class of the Data Science Diploma and Master in data science",
+        "bullet_points": [
+          "Class of the Big Data Diploma"
+        ]
+      },
+      {
+        "dates": "August 2016 to Devember 2017",
+        "where": "Faculty of engineering, Computer Science Department, Pontificia Universidad Católica de Chile",
+        "city": "Santiago, Chile",
+        "what": "Adjunct instructor of \"<a class=\"link\" href=\"https://github.com/IIC2233/syllabus\">Advanced Programming</a>\"",
+        "activities": "Course for undergraduate students",
+        "bullet_points": [
+
         ]
       },
       {
@@ -148,25 +151,6 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
         "bullet_points": [
           "<a class=\"link\" href=\"https://github.com/IIC2233-2016-1/syllabus\">Advanced Programming (Chief of Assitantship area)</a>",
           "Data Mining (Bussiness Inteligence course for professionals)"
-        ]
-      },
-      {
-        "dates": "December 2015",
-        "where": "Sonda and Innovation Center Anacleto Angelini UC",
-        "city": "Santiago, Chile",
-        "what": "Sonda Consultant for the consultancy program of the Innovation Center Anacleto Angelini UC",
-        "activities": "Automatization and innovation consultant",
-        "bullet_points": []
-      },
-      {
-        "dates": "August 2015 - December 2015",
-        "where": "<a class=\"link\" href=\"https://www.accuhealth.cl/\" >Accuehealth</a>",
-        "city": "Santiago, Chile",
-        "what": "Participant in the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/alumnos/programa-sinlimites/\">program \"Desafíos Sin Límites\"</a> of the <a class=\"link\" href=\"http://centrodeinnovacion.uc.cl/\">Innovation Center Anacleto Angelini UC</a>",
-        "activities": "Creation of a prototype of a predictive model to anticipate complications of chronic patients",
-        "bullet_points": [
-          "Application of data mining and machine learning technique to health records",
-          "Results in the areas of operations management and patient's health"
         ]
       },
       {
@@ -223,7 +207,7 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
     ],
     "research": [
       {
-        "dates": "July 2015 - ",
+        "dates": "July 2015 - 2017",
         "where": "Pontificia Universidad Católica de Chile",
         "city": "Santiago, Chile",
         "what": "Master's Thesis",
@@ -269,7 +253,7 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
         {
           "name": "Python",
           "expertise": 100,
-          "color": '#fff7f3',
+          "color": "#fff7f3",
           "library": [
             {
               "name": "numpy",
@@ -305,7 +289,7 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
           "name": "Java",
           "expertise": 85,
           "library": "",
-          "color": '#fde0dd'
+          "color": "#fde0dd"
         },
         {
           "name": "C#",
@@ -316,12 +300,12 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
               "expertise": 10
             }
           ],
-          "color": '#fcc5c0'
+          "color": "#fcc5c0"
         },
         {
           "name": "JavaScript",
           "expertise": 60,
-          "color": '#f768a1',
+          "color": "#f768a1",
           "library": [
             {
               "name": "d3",
@@ -386,7 +370,9 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
         ]
       }
     },
-    'other_activities': [
+    "other_activities": [
+      "Selected by Google to receive their travel grant to attend Grace Hopper Celebration of Women in Computing 2016",
+
       "Participant in the <a class=\"link\" href=\"http://www.ing.uc.cl/ciencia-de-la-computacion/dcc-uc-se-suma-maraton-de-big-data-de-facultad-de-comunicaciones/\"> Twitter Big Data Marathon </a> at the Innovation Center Anacleto Angelini UC",
       "Secretary of the <a class=\"link\" href=\"https://www.facebook.com/acm.puc/?fref=ts\">ACM Student Chapter</a> at the Computer Science Deparment of Pontificia Universidad Católica de Chile",
       "Communication Chief 2013 - 2014 of ClubTIME: Top Industrial Managers for Europe",
@@ -394,54 +380,9 @@ Class of the \textit{Data Science Diploma} and {Master in data science}.
       "Emerging issues committee Chief 2012 of the Engineering Student Center",
       {
         "Languages": "I'm very interested in learning other languages. I speak English and French, and I want to learn German. In 2011 and studied it at my university.",
-        "Knitting": "I chrochet scarves and beanies. I also make necklaces, bracelets and other accesories with macramé technique",
+        "Knitting": "I crochet scarves and beanies. I also make necklaces, bracelets and other accesories with macramé technique",
         "Artistic Roller Skating": "I practiced roller skating for 7 years. I did solo dance, small group and precision."
       }
     ]
-  },
-  "other_activities": [
-    {
-      "dates": "2012",
-      "where": "Engineering Student Center. Pontificia Universida Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Emerging issues committee Chief"
-    },
-    {
-      "dates": "2013-2014",
-      "where": "Ecole Centrale de Lille",
-      "city": "Lille, France",
-      "what": "Elected member of the Student's Associations Administration Board"
-    },
-    {
-      "dates": "2013-2014",
-      "where": "ClubTIME: Top Industrial Managers for Europe",
-      "city": "Lille, France",
-      "what": "Communication Chief"
-    },
-    {
-      "dates": "2016",
-      "where": "Computer Science Deparment of Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Secretary of the ACM Student Chapter"
-    },
-    {
-      "dates": "June 2016",
-      "where": "Innovation Center Anacleto Angelini UC",
-      "city": "Santiago, Chile",
-      "what": "Participant in the Twitter Big Data Marathon"
-    },
-    {
-      "dates": "August 2016",
-      "where": "Pontificia Universidad Católica de Chile",
-      "city": "Santiago, Chile",
-      "what": "Member of the organization of DataScience Day"
-    },
-    {
-      "dates": "October 2016",
-      "where": "Google",
-      "city": "Houston, USA",
-      "what": "Selected by Google to receive their travel grant to attend Grace Hopper Celebration of Women in Computing 2016"
-    }
-  ]
-}
+  }
 }
